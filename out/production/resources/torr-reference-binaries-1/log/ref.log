@@ -1,0 +1,1978 @@
+2021/01/16 21:19:21 ========================================================================================================================
+2021/01/16 21:19:21 [ref-1] Registering ...
+2021/01/16 21:19:21 [ref-2] Registering ...
+2021/01/16 21:19:21 [ref-3] Registering ...
+2021/01/16 21:19:21 [ref-1] Sending REGISTRATION_REQUEST to hub-1
+2021/01/16 21:19:21 [ref-3] Sending REGISTRATION_REQUEST to hub-1
+2021/01/16 21:19:21 [ref-2] Sending REGISTRATION_REQUEST to hub-1
+2021/01/16 21:19:21 [hub-1] Listening on 127.0.0.1:5000
+2021/01/16 21:19:21 [ref-1] Received REGISTRATION_RESPONSE from ref-1
+2021/01/16 21:19:21 [ref-1] Listening on 127.0.0.1:5001
+2021/01/16 21:19:21 [ref-2] Received REGISTRATION_RESPONSE from ref-2
+2021/01/16 21:19:21 [ref-2] Listening on 127.0.0.1:5002
+2021/01/16 21:19:21 [ref-3] Received REGISTRATION_RESPONSE from ref-3
+2021/01/16 21:19:21 [ref-3] Listening on 127.0.0.1:5003
+2021/01/16 21:19:52 ========================================================================================================================
+2021/01/16 21:19:52 [ref-1] Registering ...
+2021/01/16 21:19:52 [ref-1] Sending REGISTRATION_REQUEST to hub-1
+2021/01/16 21:19:52 [ref-2] Registering ...
+2021/01/16 21:19:52 [ref-3] Registering ...
+2021/01/16 21:19:52 [ref-3] Sending REGISTRATION_REQUEST to hub-1
+2021/01/16 21:19:52 [ref-2] Sending REGISTRATION_REQUEST to hub-1
+2021/01/16 21:19:52 [hub-1] Listening on 127.0.0.1:5000
+2021/01/16 21:19:52 [ref-2] Received REGISTRATION_RESPONSE from ref-2
+2021/01/16 21:19:52 [ref-2] Listening on 127.0.0.1:5002
+2021/01/16 21:19:52 [ref-3] Received REGISTRATION_RESPONSE from ref-3
+2021/01/16 21:19:52 [ref-3] Listening on 127.0.0.1:5003
+2021/01/16 21:19:52 [ref-1] Received REGISTRATION_RESPONSE from ref-1
+2021/01/16 21:19:52 [ref-1] Listening on 127.0.0.1:5001
+2021/01/16 21:20:10 [hub-1] Sending UPLOAD_REQUEST to node-1
+2021/01/16 21:20:10 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:20:10 [hub-1] Node node-1 - torr: invalid message UploadResponse: FileInfo == nil; 
+2021/01/16 21:20:10 [hub-1] Sending UPLOAD_REQUEST to node-2
+2021/01/16 21:20:10 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:20:10 [hub-1] Node node-2 - torr: invalid message UploadResponse: FileInfo == nil; 
+2021/01/16 21:20:10 [hub-1] Sending UPLOAD_REQUEST to node-3
+2021/01/16 21:20:10 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:20:10 [hub-1] Node node-3 - torr: invalid message UploadResponse: FileInfo == nil; 
+2021/01/16 21:20:10 [hub-1] Sending UPLOAD_REQUEST to ref-1
+2021/01/16 21:20:10 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:20:10 [hub-1] Sending UPLOAD_REQUEST to ref-2
+2021/01/16 21:20:10 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:20:10 [hub-1] Sending UPLOAD_REQUEST to ref-3
+2021/01/16 21:20:10 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:20:10 [hub-1] Active nodes: node-1 node-2 node-3 ref-1 ref-2 ref-3
+2021/01/16 21:20:10 [hub-1] Group A: node-1 ref-1
+2021/01/16 21:20:10 [hub-1] Group B: node-2 ref-2
+2021/01/16 21:20:10 [hub-1] Group C: node-3 ref-3
+2021/01/16 21:20:10 [hub-1] ============================================================
+2021/01/16 21:20:10 [hub-1] Testing ClientUpload ...
+2021/01/16 21:20:10 [hub-1] Sending UPLOAD_REQUEST to node-1
+2021/01/16 21:20:10 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:20:10 [hub-1] Node node-1 - torr: invalid message UploadResponse: FileInfo == nil; 
+2021/01/16 21:20:10 [hub-1] Node node-1 - torr: unexpected response ClientUpload: FileInfo not as expected: one file info is nil and the other is not
+2021/01/16 21:20:10 [hub-1] Sending UPLOAD_REQUEST to ref-1
+2021/01/16 21:20:10 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:20:10 [hub-1] Sending UPLOAD_REQUEST to node-2
+2021/01/16 21:20:10 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:20:10 [hub-1] Node node-2 - torr: invalid message UploadResponse: FileInfo == nil; 
+2021/01/16 21:20:10 [hub-1] Node node-2 - torr: unexpected response ClientUpload: FileInfo not as expected: one file info is nil and the other is not
+2021/01/16 21:20:10 [hub-1] Sending UPLOAD_REQUEST to ref-2
+2021/01/16 21:20:10 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:20:10 [hub-1] Sending UPLOAD_REQUEST to node-3
+2021/01/16 21:20:10 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:20:10 [hub-1] Node node-3 - torr: invalid message UploadResponse: FileInfo == nil; 
+2021/01/16 21:20:10 [hub-1] Node node-3 - torr: unexpected response ClientUpload: FileInfo not as expected: one file info is nil and the other is not
+2021/01/16 21:20:10 [hub-1] Sending UPLOAD_REQUEST to ref-3
+2021/01/16 21:20:10 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:20:10 [hub-1] ============================================================
+2021/01/16 21:20:10 [hub-1] Testing ClientReplicate ...
+2021/01/16 21:20:10 [hub-1] Sending REPLICATE_REQUEST to node-1
+2021/01/16 21:20:10 [hub-1] Received REPLICATE_RESPONSE from hub-1
+2021/01/16 21:22:27 ========================================================================================================================
+2021/01/16 21:22:27 [ref-1] Registering ...
+2021/01/16 21:22:27 [hub-1] Listening on 127.0.0.1:5000
+2021/01/16 21:22:27 [ref-1] Sending REGISTRATION_REQUEST to hub-1
+2021/01/16 21:22:27 [ref-2] Registering ...
+2021/01/16 21:22:27 [ref-2] Sending REGISTRATION_REQUEST to hub-1
+2021/01/16 21:22:27 [ref-3] Registering ...
+2021/01/16 21:22:27 [ref-3] Sending REGISTRATION_REQUEST to hub-1
+2021/01/16 21:22:27 [ref-2] Received REGISTRATION_RESPONSE from ref-2
+2021/01/16 21:22:27 [ref-2] Listening on 127.0.0.1:5002
+2021/01/16 21:22:27 [ref-1] Received REGISTRATION_RESPONSE from ref-1
+2021/01/16 21:22:27 [ref-3] Received REGISTRATION_RESPONSE from ref-3
+2021/01/16 21:22:27 [ref-3] Listening on 127.0.0.1:5003
+2021/01/16 21:22:27 [ref-1] Listening on 127.0.0.1:5001
+2021/01/16 21:22:42 [hub-1] Sending UPLOAD_REQUEST to node-1
+2021/01/16 21:22:42 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:22:42 [hub-1] Sending UPLOAD_REQUEST to node-2
+2021/01/16 21:22:42 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:22:42 [hub-1] Sending UPLOAD_REQUEST to node-3
+2021/01/16 21:22:42 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:22:42 [hub-1] Sending UPLOAD_REQUEST to ref-1
+2021/01/16 21:22:42 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:22:42 [hub-1] Sending UPLOAD_REQUEST to ref-2
+2021/01/16 21:22:42 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:22:42 [hub-1] Sending UPLOAD_REQUEST to ref-3
+2021/01/16 21:22:42 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:22:42 [hub-1] Active nodes: node-1 node-2 node-3 ref-1 ref-2 ref-3
+2021/01/16 21:22:42 [hub-1] Group A: node-1 ref-1
+2021/01/16 21:22:42 [hub-1] Group B: node-2 ref-2
+2021/01/16 21:22:42 [hub-1] Group C: node-3 ref-3
+2021/01/16 21:22:42 [hub-1] ============================================================
+2021/01/16 21:22:42 [hub-1] Testing ClientUpload ...
+2021/01/16 21:22:42 [hub-1] Sending UPLOAD_REQUEST to node-1
+2021/01/16 21:22:42 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:22:42 [hub-1] Node node-1 - torr: invalid message UploadResponse: Chunk count: expected=23 actual=1; Smaller chunk count: expected=1 actual=0; Chunk total size: expected=23536 actual=1024; 
+2021/01/16 21:22:42 [hub-1] Node node-1 - torr: unexpected response ClientUpload: FileInfo not as expected: the file infos do not have the same chunk count
+2021/01/16 21:22:42 [hub-1] Sending UPLOAD_REQUEST to ref-1
+2021/01/16 21:22:42 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:22:42 [hub-1] Sending UPLOAD_REQUEST to node-2
+2021/01/16 21:22:42 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:22:42 [hub-1] Node node-2 - torr: invalid message UploadResponse: Chunk count: expected=26 actual=1; Smaller chunk count: expected=1 actual=0; Chunk total size: expected=26357 actual=1024; 
+2021/01/16 21:22:42 [hub-1] Node node-2 - torr: unexpected response ClientUpload: FileInfo not as expected: the file infos do not have the same chunk count
+2021/01/16 21:22:42 [hub-1] Sending UPLOAD_REQUEST to ref-2
+2021/01/16 21:22:42 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:22:42 [hub-1] Sending UPLOAD_REQUEST to node-3
+2021/01/16 21:22:42 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:22:42 [hub-1] Node node-3 - torr: invalid message UploadResponse: Chunk count: expected=26 actual=1; Smaller chunk count: expected=1 actual=0; Chunk total size: expected=26332 actual=1024; 
+2021/01/16 21:22:42 [hub-1] Node node-3 - torr: unexpected response ClientUpload: FileInfo not as expected: the file infos do not have the same chunk count
+2021/01/16 21:22:42 [hub-1] Sending UPLOAD_REQUEST to ref-3
+2021/01/16 21:22:42 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:22:42 [hub-1] ============================================================
+2021/01/16 21:22:42 [hub-1] Testing ClientReplicate ...
+2021/01/16 21:22:42 [hub-1] Sending REPLICATE_REQUEST to node-1
+2021/01/16 21:22:42 [hub-1] Received REPLICATE_RESPONSE from hub-1
+2021/01/16 21:25:26 ========================================================================================================================
+2021/01/16 21:25:26 [ref-1] Registering ...
+2021/01/16 21:25:26 [ref-1] Sending REGISTRATION_REQUEST to hub-1
+2021/01/16 21:25:26 [hub-1] Listening on 127.0.0.1:5000
+2021/01/16 21:25:26 [ref-2] Registering ...
+2021/01/16 21:25:26 [ref-2] Sending REGISTRATION_REQUEST to hub-1
+2021/01/16 21:25:26 [ref-3] Registering ...
+2021/01/16 21:25:26 [ref-3] Sending REGISTRATION_REQUEST to hub-1
+2021/01/16 21:25:26 [ref-2] Received REGISTRATION_RESPONSE from ref-2
+2021/01/16 21:25:26 [ref-2] Listening on 127.0.0.1:5002
+2021/01/16 21:25:26 [ref-1] Received REGISTRATION_RESPONSE from ref-1
+2021/01/16 21:25:26 [ref-1] Listening on 127.0.0.1:5001
+2021/01/16 21:25:26 [ref-3] Received REGISTRATION_RESPONSE from ref-3
+2021/01/16 21:25:26 [ref-3] Listening on 127.0.0.1:5003
+2021/01/16 21:25:33 ========================================================================================================================
+2021/01/16 21:25:33 [hub-1] Listening on 127.0.0.1:5000
+2021/01/16 21:25:33 [ref-1] Registering ...
+2021/01/16 21:25:33 [ref-1] Sending REGISTRATION_REQUEST to hub-1
+2021/01/16 21:25:33 [ref-2] Registering ...
+2021/01/16 21:25:33 [ref-2] Sending REGISTRATION_REQUEST to hub-1
+2021/01/16 21:25:33 [ref-3] Registering ...
+2021/01/16 21:25:33 [ref-3] Sending REGISTRATION_REQUEST to hub-1
+2021/01/16 21:25:33 [ref-2] Received REGISTRATION_RESPONSE from ref-2
+2021/01/16 21:25:33 [ref-2] Listening on 127.0.0.1:5002
+2021/01/16 21:25:33 [ref-1] Received REGISTRATION_RESPONSE from ref-1
+2021/01/16 21:25:33 [ref-1] Listening on 127.0.0.1:5001
+2021/01/16 21:25:33 [ref-3] Received REGISTRATION_RESPONSE from ref-3
+2021/01/16 21:25:33 [ref-3] Listening on 127.0.0.1:5003
+2021/01/16 21:25:41 [hub-1] Sending UPLOAD_REQUEST to node-1
+2021/01/16 21:25:41 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:25:41 [hub-1] Sending UPLOAD_REQUEST to node-2
+2021/01/16 21:25:41 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:25:41 [hub-1] Sending UPLOAD_REQUEST to node-3
+2021/01/16 21:25:41 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:25:41 [hub-1] Sending UPLOAD_REQUEST to ref-1
+2021/01/16 21:25:41 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:25:41 [hub-1] Sending UPLOAD_REQUEST to ref-2
+2021/01/16 21:25:41 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:25:41 [hub-1] Sending UPLOAD_REQUEST to ref-3
+2021/01/16 21:25:41 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:25:41 [hub-1] Active nodes: node-1 node-2 node-3 ref-1 ref-2 ref-3
+2021/01/16 21:25:41 [hub-1] Group A: node-1 ref-1
+2021/01/16 21:25:41 [hub-1] Group B: node-2 ref-2
+2021/01/16 21:25:41 [hub-1] Group C: node-3 ref-3
+2021/01/16 21:25:41 [hub-1] ============================================================
+2021/01/16 21:25:41 [hub-1] Testing ClientUpload ...
+2021/01/16 21:25:41 [hub-1] Sending UPLOAD_REQUEST to node-1
+2021/01/16 21:25:41 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:25:41 [hub-1] Node node-1 - torr: invalid message UploadResponse: Chunk count: expected=24 actual=1; Smaller chunk count: expected=1 actual=0; Chunk total size: expected=24080 actual=1024; 
+2021/01/16 21:25:41 [hub-1] Node node-1 - torr: unexpected response ClientUpload: FileInfo not as expected: the file infos do not have the same chunk count
+2021/01/16 21:25:41 [hub-1] Sending UPLOAD_REQUEST to ref-1
+2021/01/16 21:25:41 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:25:41 [hub-1] Sending UPLOAD_REQUEST to node-2
+2021/01/16 21:25:41 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:25:41 [hub-1] Node node-2 - torr: invalid message UploadResponse: Chunk count: expected=23 actual=1; Smaller chunk count: expected=1 actual=0; Chunk total size: expected=22666 actual=1024; 
+2021/01/16 21:25:41 [hub-1] Node node-2 - torr: unexpected response ClientUpload: FileInfo not as expected: the file infos do not have the same chunk count
+2021/01/16 21:25:41 [hub-1] Sending UPLOAD_REQUEST to ref-2
+2021/01/16 21:25:41 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:25:41 [hub-1] Sending UPLOAD_REQUEST to node-3
+2021/01/16 21:25:41 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:25:41 [hub-1] Node node-3 - torr: invalid message UploadResponse: Chunk count: expected=25 actual=1; Smaller chunk count: expected=1 actual=0; Chunk total size: expected=25423 actual=1024; 
+2021/01/16 21:25:41 [hub-1] Node node-3 - torr: unexpected response ClientUpload: FileInfo not as expected: the file infos do not have the same chunk count
+2021/01/16 21:25:41 [hub-1] Sending UPLOAD_REQUEST to ref-3
+2021/01/16 21:25:41 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:25:41 [hub-1] ============================================================
+2021/01/16 21:25:41 [hub-1] Testing ClientReplicate ...
+2021/01/16 21:25:41 [hub-1] Sending REPLICATE_REQUEST to node-1
+2021/01/16 21:25:41 [hub-1] Received REPLICATE_RESPONSE from hub-1
+2021/01/16 21:26:37 ========================================================================================================================
+2021/01/16 21:26:37 [ref-1] Registering ...
+2021/01/16 21:26:37 [hub-1] Listening on 127.0.0.1:5000
+2021/01/16 21:26:37 [ref-1] Sending REGISTRATION_REQUEST to hub-1
+2021/01/16 21:26:37 [ref-2] Registering ...
+2021/01/16 21:26:37 [ref-2] Sending REGISTRATION_REQUEST to hub-1
+2021/01/16 21:26:37 [ref-3] Registering ...
+2021/01/16 21:26:37 [ref-3] Sending REGISTRATION_REQUEST to hub-1
+2021/01/16 21:26:37 [ref-1] Received REGISTRATION_RESPONSE from ref-1
+2021/01/16 21:26:37 [ref-3] Received REGISTRATION_RESPONSE from ref-3
+2021/01/16 21:26:37 [ref-1] Listening on 127.0.0.1:5001
+2021/01/16 21:26:37 [ref-3] Listening on 127.0.0.1:5003
+2021/01/16 21:26:37 [ref-2] Received REGISTRATION_RESPONSE from ref-2
+2021/01/16 21:26:37 [ref-2] Listening on 127.0.0.1:5002
+2021/01/16 21:26:43 [hub-1] Sending UPLOAD_REQUEST to node-1
+2021/01/16 21:26:43 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:26:43 [hub-1] Sending UPLOAD_REQUEST to node-2
+2021/01/16 21:26:43 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:26:43 [hub-1] Sending UPLOAD_REQUEST to node-3
+2021/01/16 21:26:43 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:26:43 [hub-1] Sending UPLOAD_REQUEST to ref-1
+2021/01/16 21:26:43 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:26:43 [hub-1] Sending UPLOAD_REQUEST to ref-2
+2021/01/16 21:26:43 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:26:43 [hub-1] Sending UPLOAD_REQUEST to ref-3
+2021/01/16 21:26:43 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:26:43 [hub-1] Active nodes: node-1 node-2 node-3 ref-1 ref-2 ref-3
+2021/01/16 21:26:43 [hub-1] Group A: node-1 ref-1
+2021/01/16 21:26:43 [hub-1] Group B: node-2 ref-2
+2021/01/16 21:26:43 [hub-1] Group C: node-3 ref-3
+2021/01/16 21:26:43 [hub-1] ============================================================
+2021/01/16 21:26:43 [hub-1] Testing ClientUpload ...
+2021/01/16 21:26:43 [hub-1] Sending UPLOAD_REQUEST to node-1
+2021/01/16 21:26:43 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:26:43 [hub-1] Sending UPLOAD_REQUEST to ref-1
+2021/01/16 21:26:43 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:26:43 [hub-1] Sending UPLOAD_REQUEST to node-2
+2021/01/16 21:26:43 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:26:43 [hub-1] Sending UPLOAD_REQUEST to ref-2
+2021/01/16 21:26:43 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:26:43 [hub-1] Sending UPLOAD_REQUEST to node-3
+2021/01/16 21:26:43 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:26:43 [hub-1] Sending UPLOAD_REQUEST to ref-3
+2021/01/16 21:26:43 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:26:43 [hub-1] ============================================================
+2021/01/16 21:26:43 [hub-1] Testing ClientReplicate ...
+2021/01/16 21:26:43 [hub-1] Sending REPLICATE_REQUEST to node-1
+2021/01/16 21:26:43 [hub-1] Received REPLICATE_RESPONSE from hub-1
+2021/01/16 21:28:34 ========================================================================================================================
+2021/01/16 21:28:34 [ref-1] Registering ...
+2021/01/16 21:28:34 [ref-1] Sending REGISTRATION_REQUEST to hub-1
+2021/01/16 21:28:34 [hub-1] Listening on 127.0.0.1:5000
+2021/01/16 21:28:34 [ref-2] Registering ...
+2021/01/16 21:28:34 [ref-2] Sending REGISTRATION_REQUEST to hub-1
+2021/01/16 21:28:34 [ref-3] Registering ...
+2021/01/16 21:28:34 [ref-3] Sending REGISTRATION_REQUEST to hub-1
+2021/01/16 21:28:34 [ref-1] Received REGISTRATION_RESPONSE from ref-1
+2021/01/16 21:28:34 [ref-1] Listening on 127.0.0.1:5001
+2021/01/16 21:28:34 [ref-3] Received REGISTRATION_RESPONSE from ref-3
+2021/01/16 21:28:34 [ref-3] Listening on 127.0.0.1:5003
+2021/01/16 21:28:34 [ref-2] Received REGISTRATION_RESPONSE from ref-2
+2021/01/16 21:28:34 [ref-2] Listening on 127.0.0.1:5002
+2021/01/16 21:28:57 [hub-1] Sending UPLOAD_REQUEST to node-1
+2021/01/16 21:28:57 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:28:57 [hub-1] Sending UPLOAD_REQUEST to node-2
+2021/01/16 21:28:57 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:28:57 [hub-1] Sending UPLOAD_REQUEST to node-3
+2021/01/16 21:28:57 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:28:57 [hub-1] Sending UPLOAD_REQUEST to ref-1
+2021/01/16 21:28:57 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:28:57 [hub-1] Sending UPLOAD_REQUEST to ref-2
+2021/01/16 21:28:57 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:28:57 [hub-1] Sending UPLOAD_REQUEST to ref-3
+2021/01/16 21:28:57 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:28:57 [hub-1] Active nodes: node-1 node-2 node-3 ref-1 ref-2 ref-3
+2021/01/16 21:28:57 [hub-1] Group A: node-1 ref-1
+2021/01/16 21:28:57 [hub-1] Group B: node-2 ref-2
+2021/01/16 21:28:57 [hub-1] Group C: node-3 ref-3
+2021/01/16 21:28:57 [hub-1] ============================================================
+2021/01/16 21:28:57 [hub-1] Testing ClientUpload ...
+2021/01/16 21:28:57 [hub-1] Sending UPLOAD_REQUEST to node-1
+2021/01/16 21:28:57 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:28:57 [hub-1] Sending UPLOAD_REQUEST to ref-1
+2021/01/16 21:28:57 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:28:57 [hub-1] Sending UPLOAD_REQUEST to node-2
+2021/01/16 21:28:57 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:28:57 [hub-1] Sending UPLOAD_REQUEST to ref-2
+2021/01/16 21:28:57 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:28:57 [hub-1] Sending UPLOAD_REQUEST to node-3
+2021/01/16 21:28:57 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:28:57 [hub-1] Sending UPLOAD_REQUEST to ref-3
+2021/01/16 21:28:57 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:28:57 [hub-1] ============================================================
+2021/01/16 21:28:57 [hub-1] Testing ClientReplicate ...
+2021/01/16 21:28:57 [hub-1] Sending REPLICATE_REQUEST to node-1
+2021/01/16 21:28:57 [hub-1] Received REPLICATE_RESPONSE from hub-1
+2021/01/16 21:30:56 ========================================================================================================================
+2021/01/16 21:30:56 [ref-1] Registering ...
+2021/01/16 21:30:56 [ref-1] Sending REGISTRATION_REQUEST to hub-1
+2021/01/16 21:30:56 [hub-1] Listening on 127.0.0.1:5000
+2021/01/16 21:30:56 [ref-2] Registering ...
+2021/01/16 21:30:56 [ref-2] Sending REGISTRATION_REQUEST to hub-1
+2021/01/16 21:30:56 [ref-3] Registering ...
+2021/01/16 21:30:56 [ref-3] Sending REGISTRATION_REQUEST to hub-1
+2021/01/16 21:30:56 [ref-1] Received REGISTRATION_RESPONSE from ref-1
+2021/01/16 21:30:56 [ref-1] Listening on 127.0.0.1:5001
+2021/01/16 21:30:56 [ref-2] Received REGISTRATION_RESPONSE from ref-2
+2021/01/16 21:30:56 [ref-2] Listening on 127.0.0.1:5002
+2021/01/16 21:30:56 [ref-3] Received REGISTRATION_RESPONSE from ref-3
+2021/01/16 21:30:56 [ref-3] Listening on 127.0.0.1:5003
+2021/01/16 21:31:02 [hub-1] Sending UPLOAD_REQUEST to node-1
+2021/01/16 21:31:02 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:31:02 [hub-1] Sending UPLOAD_REQUEST to node-2
+2021/01/16 21:31:02 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:31:02 [hub-1] Sending UPLOAD_REQUEST to node-3
+2021/01/16 21:31:02 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:31:02 [hub-1] Sending UPLOAD_REQUEST to ref-1
+2021/01/16 21:31:02 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:31:02 [hub-1] Sending UPLOAD_REQUEST to ref-2
+2021/01/16 21:31:02 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:31:02 [hub-1] Sending UPLOAD_REQUEST to ref-3
+2021/01/16 21:31:02 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:31:02 [hub-1] Active nodes: node-1 node-2 node-3 ref-1 ref-2 ref-3
+2021/01/16 21:31:02 [hub-1] Group A: node-1 ref-1
+2021/01/16 21:31:02 [hub-1] Group B: node-2 ref-2
+2021/01/16 21:31:02 [hub-1] Group C: node-3 ref-3
+2021/01/16 21:31:02 [hub-1] ============================================================
+2021/01/16 21:31:02 [hub-1] Testing ClientUpload ...
+2021/01/16 21:31:02 [hub-1] Sending UPLOAD_REQUEST to node-1
+2021/01/16 21:31:02 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:31:02 [hub-1] Sending UPLOAD_REQUEST to ref-1
+2021/01/16 21:31:02 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:31:02 [hub-1] Sending UPLOAD_REQUEST to node-2
+2021/01/16 21:31:02 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:31:02 [hub-1] Sending UPLOAD_REQUEST to ref-2
+2021/01/16 21:31:02 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:31:02 [hub-1] Sending UPLOAD_REQUEST to node-3
+2021/01/16 21:31:02 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:31:02 [hub-1] Sending UPLOAD_REQUEST to ref-3
+2021/01/16 21:31:02 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:31:02 [hub-1] ============================================================
+2021/01/16 21:31:02 [hub-1] Testing ClientReplicate ...
+2021/01/16 21:31:02 [hub-1] Sending REPLICATE_REQUEST to node-1
+2021/01/16 21:31:02 [hub-1] Received REPLICATE_RESPONSE from hub-1
+2021/01/16 21:31:59 ========================================================================================================================
+2021/01/16 21:31:59 [hub-1] Listening on 127.0.0.1:5000
+2021/01/16 21:31:59 [ref-1] Registering ...
+2021/01/16 21:31:59 [ref-1] Sending REGISTRATION_REQUEST to hub-1
+2021/01/16 21:31:59 [ref-2] Registering ...
+2021/01/16 21:31:59 [ref-2] Sending REGISTRATION_REQUEST to hub-1
+2021/01/16 21:31:59 [ref-3] Registering ...
+2021/01/16 21:31:59 [ref-3] Sending REGISTRATION_REQUEST to hub-1
+2021/01/16 21:31:59 [ref-3] Received REGISTRATION_RESPONSE from ref-3
+2021/01/16 21:31:59 [ref-3] Listening on 127.0.0.1:5003
+2021/01/16 21:31:59 [ref-1] Received REGISTRATION_RESPONSE from ref-1
+2021/01/16 21:31:59 [ref-1] Listening on 127.0.0.1:5001
+2021/01/16 21:31:59 [ref-2] Received REGISTRATION_RESPONSE from ref-2
+2021/01/16 21:31:59 [ref-2] Listening on 127.0.0.1:5002
+2021/01/16 21:32:07 [hub-1] Sending UPLOAD_REQUEST to node-1
+2021/01/16 21:32:07 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:32:07 [hub-1] Sending UPLOAD_REQUEST to node-2
+2021/01/16 21:32:07 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:32:07 [hub-1] Sending UPLOAD_REQUEST to node-3
+2021/01/16 21:32:07 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:32:07 [hub-1] Sending UPLOAD_REQUEST to ref-1
+2021/01/16 21:32:07 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:32:07 [hub-1] Sending UPLOAD_REQUEST to ref-2
+2021/01/16 21:32:07 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:32:07 [hub-1] Sending UPLOAD_REQUEST to ref-3
+2021/01/16 21:32:07 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:32:07 [hub-1] Active nodes: node-1 node-2 node-3 ref-1 ref-2 ref-3
+2021/01/16 21:32:07 [hub-1] Group A: node-1 ref-1
+2021/01/16 21:32:07 [hub-1] Group B: node-2 ref-2
+2021/01/16 21:32:07 [hub-1] Group C: node-3 ref-3
+2021/01/16 21:32:07 [hub-1] ============================================================
+2021/01/16 21:32:07 [hub-1] Testing ClientUpload ...
+2021/01/16 21:32:07 [hub-1] Sending UPLOAD_REQUEST to node-1
+2021/01/16 21:32:07 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:32:07 [hub-1] Sending UPLOAD_REQUEST to ref-1
+2021/01/16 21:32:07 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:32:07 [hub-1] Sending UPLOAD_REQUEST to node-2
+2021/01/16 21:32:07 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:32:07 [hub-1] Sending UPLOAD_REQUEST to ref-2
+2021/01/16 21:32:07 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:32:07 [hub-1] Sending UPLOAD_REQUEST to node-3
+2021/01/16 21:32:07 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:32:07 [hub-1] Sending UPLOAD_REQUEST to ref-3
+2021/01/16 21:32:07 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 21:32:07 [hub-1] ============================================================
+2021/01/16 21:32:07 [hub-1] Testing ClientReplicate ...
+2021/01/16 21:32:07 [hub-1] Sending REPLICATE_REQUEST to node-1
+2021/01/16 21:32:07 [hub-1] Received REPLICATE_RESPONSE from hub-1
+2021/01/16 23:23:19 ========================================================================================================================
+2021/01/16 23:23:19 [ref-1] Registering ...
+2021/01/16 23:23:19 [ref-3] Registering ...
+2021/01/16 23:23:19 [ref-2] Registering ...
+2021/01/16 23:23:19 [ref-1] Sending REGISTRATION_REQUEST to hub-1
+2021/01/16 23:23:19 [ref-2] Sending REGISTRATION_REQUEST to hub-1
+2021/01/16 23:23:19 [ref-3] Sending REGISTRATION_REQUEST to hub-1
+2021/01/16 23:23:19 [hub-1] Listening on 127.0.0.1:5000
+2021/01/16 23:23:19 [ref-1] Received REGISTRATION_RESPONSE from ref-1
+2021/01/16 23:23:19 [ref-1] Listening on 127.0.0.1:5001
+2021/01/16 23:23:19 [ref-3] Received REGISTRATION_RESPONSE from ref-3
+2021/01/16 23:23:19 [ref-3] Listening on 127.0.0.1:5003
+2021/01/16 23:23:19 [ref-2] Received REGISTRATION_RESPONSE from ref-2
+2021/01/16 23:23:19 [ref-2] Listening on 127.0.0.1:5002
+2021/01/16 23:23:35 [hub-1] Sending UPLOAD_REQUEST to node-1
+2021/01/16 23:23:35 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:23:35 [hub-1] Sending UPLOAD_REQUEST to node-2
+2021/01/16 23:23:35 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:23:35 [hub-1] Sending UPLOAD_REQUEST to node-3
+2021/01/16 23:23:35 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:23:35 [hub-1] Sending UPLOAD_REQUEST to ref-1
+2021/01/16 23:23:35 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:23:35 [hub-1] Sending UPLOAD_REQUEST to ref-2
+2021/01/16 23:23:35 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:23:35 [hub-1] Sending UPLOAD_REQUEST to ref-3
+2021/01/16 23:23:35 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:23:35 [hub-1] Active nodes: node-1 node-2 node-3 ref-1 ref-2 ref-3
+2021/01/16 23:23:35 [hub-1] Group A: node-1 ref-1
+2021/01/16 23:23:35 [hub-1] Group B: node-2 ref-2
+2021/01/16 23:23:35 [hub-1] Group C: node-3 ref-3
+2021/01/16 23:23:35 [hub-1] ============================================================
+2021/01/16 23:23:35 [hub-1] Testing ClientUpload ...
+2021/01/16 23:23:35 [hub-1] Sending UPLOAD_REQUEST to node-1
+2021/01/16 23:23:35 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:23:35 [hub-1] Sending UPLOAD_REQUEST to ref-1
+2021/01/16 23:23:35 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:23:35 [hub-1] Sending UPLOAD_REQUEST to node-2
+2021/01/16 23:23:35 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:23:35 [hub-1] Sending UPLOAD_REQUEST to ref-2
+2021/01/16 23:23:35 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:23:35 [hub-1] Sending UPLOAD_REQUEST to node-3
+2021/01/16 23:23:35 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:23:35 [hub-1] Sending UPLOAD_REQUEST to ref-3
+2021/01/16 23:23:35 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:23:35 [hub-1] ============================================================
+2021/01/16 23:23:35 [hub-1] Testing ClientReplicate ...
+2021/01/16 23:23:35 [hub-1] Sending REPLICATE_REQUEST to node-1
+2021/01/16 23:23:35 [hub-1] Received REPLICATE_RESPONSE from hub-1
+2021/01/16 23:24:20 ========================================================================================================================
+2021/01/16 23:24:20 [hub-1] Listening on 127.0.0.1:5000
+2021/01/16 23:24:20 [ref-1] Registering ...
+2021/01/16 23:24:20 [ref-1] Sending REGISTRATION_REQUEST to hub-1
+2021/01/16 23:24:20 [ref-2] Registering ...
+2021/01/16 23:24:20 [ref-2] Sending REGISTRATION_REQUEST to hub-1
+2021/01/16 23:24:20 [ref-3] Registering ...
+2021/01/16 23:24:20 [ref-3] Sending REGISTRATION_REQUEST to hub-1
+2021/01/16 23:24:20 [ref-2] Received REGISTRATION_RESPONSE from ref-2
+2021/01/16 23:24:20 [ref-2] Listening on 127.0.0.1:5002
+2021/01/16 23:24:20 [ref-1] Received REGISTRATION_RESPONSE from ref-1
+2021/01/16 23:24:20 [ref-1] Listening on 127.0.0.1:5001
+2021/01/16 23:24:20 [ref-3] Received REGISTRATION_RESPONSE from ref-3
+2021/01/16 23:24:20 [ref-3] Listening on 127.0.0.1:5003
+2021/01/16 23:24:27 [hub-1] Sending UPLOAD_REQUEST to node-1
+2021/01/16 23:24:28 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:24:28 [hub-1] Sending UPLOAD_REQUEST to node-2
+2021/01/16 23:24:28 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:24:28 [hub-1] Sending UPLOAD_REQUEST to node-3
+2021/01/16 23:24:28 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:24:28 [hub-1] Sending UPLOAD_REQUEST to ref-1
+2021/01/16 23:24:28 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:24:28 [hub-1] Sending UPLOAD_REQUEST to ref-2
+2021/01/16 23:24:28 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:24:28 [hub-1] Sending UPLOAD_REQUEST to ref-3
+2021/01/16 23:24:28 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:24:28 [hub-1] Active nodes: node-1 node-2 node-3 ref-1 ref-2 ref-3
+2021/01/16 23:24:28 [hub-1] Group A: node-1 ref-1
+2021/01/16 23:24:28 [hub-1] Group B: node-2 ref-2
+2021/01/16 23:24:28 [hub-1] Group C: node-3 ref-3
+2021/01/16 23:24:28 [hub-1] ============================================================
+2021/01/16 23:24:28 [hub-1] Testing ClientUpload ...
+2021/01/16 23:24:28 [hub-1] Sending UPLOAD_REQUEST to node-1
+2021/01/16 23:24:28 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:24:28 [hub-1] Sending UPLOAD_REQUEST to ref-1
+2021/01/16 23:24:28 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:24:28 [hub-1] Sending UPLOAD_REQUEST to node-2
+2021/01/16 23:24:28 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:24:28 [hub-1] Sending UPLOAD_REQUEST to ref-2
+2021/01/16 23:24:28 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:24:28 [hub-1] Sending UPLOAD_REQUEST to node-3
+2021/01/16 23:24:28 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:24:28 [hub-1] Sending UPLOAD_REQUEST to ref-3
+2021/01/16 23:24:28 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:24:28 [hub-1] ============================================================
+2021/01/16 23:24:28 [hub-1] Testing ClientReplicate ...
+2021/01/16 23:24:28 [hub-1] Sending REPLICATE_REQUEST to node-1
+2021/01/16 23:24:28 [hub-1] Received REPLICATE_RESPONSE from hub-1
+2021/01/16 23:29:26 ========================================================================================================================
+2021/01/16 23:29:26 [ref-1] Registering ...
+2021/01/16 23:29:26 [hub-1] Listening on 127.0.0.1:5000
+2021/01/16 23:29:26 [ref-1] Sending REGISTRATION_REQUEST to hub-1
+2021/01/16 23:29:26 [ref-2] Registering ...
+2021/01/16 23:29:26 [ref-2] Sending REGISTRATION_REQUEST to hub-1
+2021/01/16 23:29:26 [ref-3] Registering ...
+2021/01/16 23:29:26 [ref-3] Sending REGISTRATION_REQUEST to hub-1
+2021/01/16 23:29:26 [ref-2] Received REGISTRATION_RESPONSE from ref-2
+2021/01/16 23:29:26 [ref-2] Listening on 127.0.0.1:5002
+2021/01/16 23:29:26 [ref-1] Received REGISTRATION_RESPONSE from ref-1
+2021/01/16 23:29:26 [ref-1] Listening on 127.0.0.1:5001
+2021/01/16 23:29:26 [ref-3] Received REGISTRATION_RESPONSE from ref-3
+2021/01/16 23:29:26 [ref-3] Listening on 127.0.0.1:5003
+2021/01/16 23:29:31 [hub-1] Sending UPLOAD_REQUEST to node-1
+2021/01/16 23:29:31 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:29:31 [hub-1] Sending UPLOAD_REQUEST to node-2
+2021/01/16 23:29:31 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:29:31 [hub-1] Sending UPLOAD_REQUEST to node-3
+2021/01/16 23:29:31 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:29:31 [hub-1] Sending UPLOAD_REQUEST to ref-1
+2021/01/16 23:29:31 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:29:31 [hub-1] Sending UPLOAD_REQUEST to ref-2
+2021/01/16 23:29:31 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:29:31 [hub-1] Sending UPLOAD_REQUEST to ref-3
+2021/01/16 23:29:31 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:29:31 [hub-1] Active nodes: node-1 node-2 node-3 ref-1 ref-2 ref-3
+2021/01/16 23:29:31 [hub-1] Group A: node-1 ref-1
+2021/01/16 23:29:31 [hub-1] Group B: node-2 ref-2
+2021/01/16 23:29:31 [hub-1] Group C: node-3 ref-3
+2021/01/16 23:29:31 [hub-1] ============================================================
+2021/01/16 23:29:31 [hub-1] Testing ClientUpload ...
+2021/01/16 23:29:31 [hub-1] Sending UPLOAD_REQUEST to node-1
+2021/01/16 23:29:31 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:29:31 [hub-1] Sending UPLOAD_REQUEST to ref-1
+2021/01/16 23:29:31 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:29:31 [hub-1] Sending UPLOAD_REQUEST to node-2
+2021/01/16 23:29:31 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:29:31 [hub-1] Sending UPLOAD_REQUEST to ref-2
+2021/01/16 23:29:31 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:29:31 [hub-1] Sending UPLOAD_REQUEST to node-3
+2021/01/16 23:29:31 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:29:31 [hub-1] Sending UPLOAD_REQUEST to ref-3
+2021/01/16 23:29:31 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:29:31 [hub-1] ============================================================
+2021/01/16 23:29:31 [hub-1] Testing ClientReplicate ...
+2021/01/16 23:29:31 [hub-1] Sending REPLICATE_REQUEST to node-1
+2021/01/16 23:29:31 [hub-1] Received REPLICATE_RESPONSE from hub-1
+2021/01/16 23:30:14 ========================================================================================================================
+2021/01/16 23:30:14 [ref-1] Registering ...
+2021/01/16 23:30:14 [ref-1] Sending REGISTRATION_REQUEST to hub-1
+2021/01/16 23:30:14 [ref-2] Registering ...
+2021/01/16 23:30:14 [hub-1] Listening on 127.0.0.1:5000
+2021/01/16 23:30:14 [ref-2] Sending REGISTRATION_REQUEST to hub-1
+2021/01/16 23:30:14 [ref-3] Registering ...
+2021/01/16 23:30:14 [ref-3] Sending REGISTRATION_REQUEST to hub-1
+2021/01/16 23:30:14 [ref-2] Received REGISTRATION_RESPONSE from ref-2
+2021/01/16 23:30:14 [ref-2] Listening on 127.0.0.1:5002
+2021/01/16 23:30:14 [ref-1] Received REGISTRATION_RESPONSE from ref-1
+2021/01/16 23:30:14 [ref-1] Listening on 127.0.0.1:5001
+2021/01/16 23:30:14 [ref-3] Received REGISTRATION_RESPONSE from ref-3
+2021/01/16 23:30:14 [ref-3] Listening on 127.0.0.1:5003
+2021/01/16 23:30:19 [hub-1] Sending UPLOAD_REQUEST to node-1
+2021/01/16 23:30:19 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:30:19 [hub-1] Sending UPLOAD_REQUEST to node-2
+2021/01/16 23:30:19 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:30:19 [hub-1] Sending UPLOAD_REQUEST to node-3
+2021/01/16 23:30:19 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:30:19 [hub-1] Sending UPLOAD_REQUEST to ref-1
+2021/01/16 23:30:19 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:30:19 [hub-1] Sending UPLOAD_REQUEST to ref-2
+2021/01/16 23:30:19 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:30:19 [hub-1] Sending UPLOAD_REQUEST to ref-3
+2021/01/16 23:30:19 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:30:19 [hub-1] Active nodes: node-1 node-2 node-3 ref-1 ref-2 ref-3
+2021/01/16 23:30:19 [hub-1] Group A: node-1 ref-1
+2021/01/16 23:30:19 [hub-1] Group B: node-2 ref-2
+2021/01/16 23:30:19 [hub-1] Group C: node-3 ref-3
+2021/01/16 23:30:19 [hub-1] ============================================================
+2021/01/16 23:30:19 [hub-1] Testing ClientUpload ...
+2021/01/16 23:30:19 [hub-1] Sending UPLOAD_REQUEST to node-1
+2021/01/16 23:30:19 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:30:19 [hub-1] Sending UPLOAD_REQUEST to ref-1
+2021/01/16 23:30:20 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:30:20 [hub-1] Sending UPLOAD_REQUEST to node-2
+2021/01/16 23:30:20 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:30:20 [hub-1] Sending UPLOAD_REQUEST to ref-2
+2021/01/16 23:30:20 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:30:20 [hub-1] Sending UPLOAD_REQUEST to node-3
+2021/01/16 23:30:20 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:30:20 [hub-1] Sending UPLOAD_REQUEST to ref-3
+2021/01/16 23:30:20 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:30:20 [hub-1] ============================================================
+2021/01/16 23:30:20 [hub-1] Testing ClientReplicate ...
+2021/01/16 23:30:20 [hub-1] Sending REPLICATE_REQUEST to node-1
+2021/01/16 23:30:20 [hub-1] Received REPLICATE_RESPONSE from hub-1
+2021/01/16 23:34:23 ========================================================================================================================
+2021/01/16 23:34:23 [ref-1] Registering ...
+2021/01/16 23:34:23 [ref-1] Sending REGISTRATION_REQUEST to hub-1
+2021/01/16 23:34:23 [hub-1] Listening on 127.0.0.1:5000
+2021/01/16 23:34:23 [ref-2] Registering ...
+2021/01/16 23:34:23 [ref-2] Sending REGISTRATION_REQUEST to hub-1
+2021/01/16 23:34:23 [ref-3] Registering ...
+2021/01/16 23:34:23 [ref-3] Sending REGISTRATION_REQUEST to hub-1
+2021/01/16 23:34:23 [ref-2] Received REGISTRATION_RESPONSE from ref-2
+2021/01/16 23:34:23 [ref-2] Listening on 127.0.0.1:5002
+2021/01/16 23:34:23 [ref-1] Received REGISTRATION_RESPONSE from ref-1
+2021/01/16 23:34:23 [ref-1] Listening on 127.0.0.1:5001
+2021/01/16 23:34:23 [ref-3] Received REGISTRATION_RESPONSE from ref-3
+2021/01/16 23:34:23 [ref-3] Listening on 127.0.0.1:5003
+2021/01/16 23:34:30 [hub-1] Sending UPLOAD_REQUEST to node-1
+2021/01/16 23:34:30 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:34:30 [hub-1] Sending UPLOAD_REQUEST to node-2
+2021/01/16 23:34:30 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:34:30 [hub-1] Sending UPLOAD_REQUEST to node-3
+2021/01/16 23:34:30 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:34:30 [hub-1] Sending UPLOAD_REQUEST to ref-1
+2021/01/16 23:34:30 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:34:30 [hub-1] Sending UPLOAD_REQUEST to ref-2
+2021/01/16 23:34:30 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:34:30 [hub-1] Sending UPLOAD_REQUEST to ref-3
+2021/01/16 23:34:30 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:34:30 [hub-1] Active nodes: node-1 node-2 node-3 ref-1 ref-2 ref-3
+2021/01/16 23:34:30 [hub-1] Group A: node-1 ref-1
+2021/01/16 23:34:30 [hub-1] Group B: node-2 ref-2
+2021/01/16 23:34:30 [hub-1] Group C: node-3 ref-3
+2021/01/16 23:34:30 [hub-1] ============================================================
+2021/01/16 23:34:30 [hub-1] Testing ClientUpload ...
+2021/01/16 23:34:30 [hub-1] Sending UPLOAD_REQUEST to node-1
+2021/01/16 23:34:30 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:34:30 [hub-1] Sending UPLOAD_REQUEST to ref-1
+2021/01/16 23:34:30 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:34:30 [hub-1] Sending UPLOAD_REQUEST to node-2
+2021/01/16 23:34:30 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:34:30 [hub-1] Sending UPLOAD_REQUEST to ref-2
+2021/01/16 23:34:30 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:34:30 [hub-1] Sending UPLOAD_REQUEST to node-3
+2021/01/16 23:34:30 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:34:30 [hub-1] Sending UPLOAD_REQUEST to ref-3
+2021/01/16 23:34:30 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:34:30 [hub-1] ============================================================
+2021/01/16 23:34:30 [hub-1] Testing ClientReplicate ...
+2021/01/16 23:34:30 [hub-1] Sending REPLICATE_REQUEST to node-1
+2021/01/16 23:34:30 [hub-1] Received REPLICATE_RESPONSE from hub-1
+2021/01/16 23:37:00 ========================================================================================================================
+2021/01/16 23:37:00 [ref-1] Registering ...
+2021/01/16 23:37:00 [ref-1] Sending REGISTRATION_REQUEST to hub-1
+2021/01/16 23:37:00 [hub-1] Listening on 127.0.0.1:5000
+2021/01/16 23:37:00 [ref-2] Registering ...
+2021/01/16 23:37:00 [ref-2] Sending REGISTRATION_REQUEST to hub-1
+2021/01/16 23:37:00 [ref-3] Registering ...
+2021/01/16 23:37:00 [ref-3] Sending REGISTRATION_REQUEST to hub-1
+2021/01/16 23:37:00 [ref-1] Received REGISTRATION_RESPONSE from ref-1
+2021/01/16 23:37:00 [ref-3] Received REGISTRATION_RESPONSE from ref-3
+2021/01/16 23:37:00 [ref-2] Received REGISTRATION_RESPONSE from ref-2
+2021/01/16 23:37:00 [ref-2] Listening on 127.0.0.1:5002
+2021/01/16 23:37:00 [ref-1] Listening on 127.0.0.1:5001
+2021/01/16 23:37:00 [ref-3] Listening on 127.0.0.1:5003
+2021/01/16 23:37:06 [hub-1] Sending UPLOAD_REQUEST to node-1
+2021/01/16 23:37:06 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:37:06 [hub-1] Sending UPLOAD_REQUEST to node-2
+2021/01/16 23:37:06 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:37:06 [hub-1] Sending UPLOAD_REQUEST to node-3
+2021/01/16 23:37:06 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:37:06 [hub-1] Sending UPLOAD_REQUEST to ref-1
+2021/01/16 23:37:06 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:37:06 [hub-1] Sending UPLOAD_REQUEST to ref-2
+2021/01/16 23:37:06 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:37:06 [hub-1] Sending UPLOAD_REQUEST to ref-3
+2021/01/16 23:37:06 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:37:06 [hub-1] Active nodes: node-1 node-2 node-3 ref-1 ref-2 ref-3
+2021/01/16 23:37:06 [hub-1] Group A: node-1 ref-1
+2021/01/16 23:37:06 [hub-1] Group B: node-2 ref-2
+2021/01/16 23:37:06 [hub-1] Group C: node-3 ref-3
+2021/01/16 23:37:06 [hub-1] ============================================================
+2021/01/16 23:37:06 [hub-1] Testing ClientUpload ...
+2021/01/16 23:37:06 [hub-1] Sending UPLOAD_REQUEST to node-1
+2021/01/16 23:37:06 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:37:06 [hub-1] Sending UPLOAD_REQUEST to ref-1
+2021/01/16 23:37:06 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:37:06 [hub-1] Sending UPLOAD_REQUEST to node-2
+2021/01/16 23:37:06 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:37:06 [hub-1] Sending UPLOAD_REQUEST to ref-2
+2021/01/16 23:37:06 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:37:06 [hub-1] Sending UPLOAD_REQUEST to node-3
+2021/01/16 23:37:06 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:37:06 [hub-1] Sending UPLOAD_REQUEST to ref-3
+2021/01/16 23:37:06 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:37:06 [hub-1] ============================================================
+2021/01/16 23:37:06 [hub-1] Testing ClientReplicate ...
+2021/01/16 23:37:06 [hub-1] Sending REPLICATE_REQUEST to node-1
+2021/01/16 23:37:06 [hub-1] Received REPLICATE_RESPONSE from hub-1
+2021/01/16 23:37:06 [hub-1] Sending REPLICATE_REQUEST to ref-1
+2021/01/16 23:37:06 [ref-1] Sending SUBNET_REQUEST to hub-1
+2021/01/16 23:37:06 [ref-1] Received SUBNET_RESPONSE from ref-1
+2021/01/16 23:37:06 [ref-1] Sending CHUNK_REQUEST to node-1
+2021/01/16 23:37:06 [ref-1] Sending CHUNK_REQUEST to node-1
+2021/01/16 23:37:06 [ref-1] Sending CHUNK_REQUEST to node-3
+2021/01/16 23:37:06 [ref-1] Sending CHUNK_REQUEST to ref-3
+2021/01/16 23:37:06 [ref-1] Sending CHUNK_REQUEST to node-1
+2021/01/16 23:37:06 [ref-1] Sending CHUNK_REQUEST to node-1
+2021/01/16 23:37:06 [ref-1] Sending CHUNK_REQUEST to node-2
+2021/01/16 23:37:06 [ref-1] Sending CHUNK_REQUEST to ref-2
+2021/01/16 23:37:06 [ref-1] Sending CHUNK_REQUEST to ref-2
+2021/01/16 23:37:06 [ref-1] Sending CHUNK_REQUEST to node-2
+2021/01/16 23:37:06 [ref-1] Sending CHUNK_REQUEST to node-2
+2021/01/16 23:37:06 [ref-1] Sending CHUNK_REQUEST to node-3
+2021/01/16 23:37:06 [ref-1] Sending CHUNK_REQUEST to ref-3
+2021/01/16 23:37:06 [ref-1] Sending CHUNK_REQUEST to node-3
+2021/01/16 23:37:06 [ref-1] Sending CHUNK_REQUEST to ref-3
+2021/01/16 23:37:06 [ref-1] Sending CHUNK_REQUEST to node-1
+2021/01/16 23:37:06 [ref-1] Sending CHUNK_REQUEST to node-1
+2021/01/16 23:37:06 [ref-1] Sending CHUNK_REQUEST to ref-2
+2021/01/16 23:37:06 [ref-1] Sending CHUNK_REQUEST to ref-2
+2021/01/16 23:37:06 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:37:06 [ref-1] Sending CHUNK_REQUEST to node-1
+2021/01/16 23:37:06 [ref-1] Sending CHUNK_REQUEST to node-1
+2021/01/16 23:37:06 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:37:06 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:37:06 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:37:06 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:37:06 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:37:06 [ref-1] Sending CHUNK_REQUEST to ref-3
+2021/01/16 23:37:06 [ref-1] Sending CHUNK_REQUEST to node-3
+2021/01/16 23:37:06 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:37:06 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:37:06 [ref-1] Sending CHUNK_REQUEST to node-1
+2021/01/16 23:37:06 [ref-1] Sending CHUNK_REQUEST to ref-2
+2021/01/16 23:37:06 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:37:06 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:37:06 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:37:06 [ref-1] Sending CHUNK_REQUEST to node-1
+2021/01/16 23:37:06 [ref-1] Sending CHUNK_REQUEST to ref-2
+2021/01/16 23:37:06 [ref-1] Sending CHUNK_REQUEST to node-1
+2021/01/16 23:37:06 [ref-1] Sending CHUNK_REQUEST to node-1
+2021/01/16 23:37:06 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:37:06 [ref-1] Sending CHUNK_REQUEST to node-2
+2021/01/16 23:37:06 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:37:06 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:37:06 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:37:06 [ref-1] Sending CHUNK_REQUEST to node-1
+2021/01/16 23:37:06 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:37:06 [ref-1] Sending CHUNK_REQUEST to ref-2
+2021/01/16 23:37:06 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:37:06 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:37:06 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:37:06 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:37:06 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:37:06 [ref-1] Sending CHUNK_REQUEST to ref-2
+2021/01/16 23:37:06 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:37:06 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:37:06 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:37:06 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:37:06 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:37:06 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:37:06 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:37:06 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:37:06 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:37:06 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:37:06 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:37:06 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:37:06 [hub-1] Received REPLICATE_RESPONSE from hub-1
+2021/01/16 23:37:06 [hub-1] Sending REPLICATE_REQUEST to node-2
+2021/01/16 23:37:06 [hub-1] Received REPLICATE_RESPONSE from hub-1
+2021/01/16 23:37:06 [hub-1] Sending REPLICATE_REQUEST to ref-2
+2021/01/16 23:37:06 [ref-2] Sending SUBNET_REQUEST to hub-1
+2021/01/16 23:37:06 [ref-2] Received SUBNET_RESPONSE from ref-2
+2021/01/16 23:37:06 [ref-2] Sending CHUNK_REQUEST to node-1
+2021/01/16 23:37:06 [ref-2] Sending CHUNK_REQUEST to node-2
+2021/01/16 23:37:06 [ref-2] Sending CHUNK_REQUEST to node-3
+2021/01/16 23:37:06 [ref-2] Sending CHUNK_REQUEST to ref-1
+2021/01/16 23:37:06 [ref-2] Sending CHUNK_REQUEST to ref-3
+2021/01/16 23:37:06 [ref-2] Sending CHUNK_REQUEST to node-2
+2021/01/16 23:37:06 [ref-2] Sending CHUNK_REQUEST to ref-3
+2021/01/16 23:37:06 [ref-2] Sending CHUNK_REQUEST to ref-3
+2021/01/16 23:37:06 [ref-2] Sending CHUNK_REQUEST to ref-1
+2021/01/16 23:37:06 [ref-2] Sending CHUNK_REQUEST to node-1
+2021/01/16 23:37:06 [ref-2] Sending CHUNK_REQUEST to ref-3
+2021/01/16 23:37:06 [ref-2] Sending CHUNK_REQUEST to node-1
+2021/01/16 23:37:06 [ref-2] Sending CHUNK_REQUEST to node-2
+2021/01/16 23:37:06 [ref-2] Sending CHUNK_REQUEST to ref-3
+2021/01/16 23:37:06 [ref-2] Sending CHUNK_REQUEST to ref-3
+2021/01/16 23:37:06 [ref-2] Sending CHUNK_REQUEST to node-1
+2021/01/16 23:37:06 [ref-2] Sending CHUNK_REQUEST to node-2
+2021/01/16 23:37:06 [ref-2] Sending CHUNK_REQUEST to node-3
+2021/01/16 23:37:06 [ref-2] Sending CHUNK_REQUEST to ref-3
+2021/01/16 23:37:06 [ref-2] Sending CHUNK_REQUEST to ref-1
+2021/01/16 23:37:06 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:37:06 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:37:06 [ref-2] Sending CHUNK_REQUEST to node-1
+2021/01/16 23:37:06 [ref-2] Sending CHUNK_REQUEST to ref-3
+2021/01/16 23:37:06 [ref-2] Sending CHUNK_REQUEST to node-3
+2021/01/16 23:37:06 [ref-2] Sending CHUNK_REQUEST to node-3
+2021/01/16 23:37:06 [ref-2] Sending CHUNK_REQUEST to node-2
+2021/01/16 23:37:06 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:37:06 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:37:06 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:37:06 [ref-2] Sending CHUNK_REQUEST to node-1
+2021/01/16 23:37:06 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:37:06 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:37:06 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:37:06 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:37:06 [ref-2] Sending CHUNK_REQUEST to node-1
+2021/01/16 23:37:06 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:37:06 [ref-2] Sending CHUNK_REQUEST to node-2
+2021/01/16 23:37:06 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:37:06 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:37:06 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:37:06 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:37:06 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:37:06 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:37:06 [ref-2] Sending CHUNK_REQUEST to node-2
+2021/01/16 23:37:06 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:37:06 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:37:06 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:37:06 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:37:06 [ref-2] Sending CHUNK_REQUEST to node-2
+2021/01/16 23:37:06 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:37:06 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:37:06 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:37:06 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:37:06 [ref-2] Sending CHUNK_REQUEST to node-2
+2021/01/16 23:37:06 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:37:06 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:37:06 [ref-2] Sending CHUNK_REQUEST to node-2
+2021/01/16 23:37:06 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:37:06 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:37:06 [ref-2] Sending CHUNK_REQUEST to node-2
+2021/01/16 23:37:06 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:37:06 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:37:06 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:37:06 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:37:06 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:37:06 [hub-1] Received REPLICATE_RESPONSE from hub-1
+2021/01/16 23:37:06 [hub-1] Sending REPLICATE_REQUEST to node-3
+2021/01/16 23:37:06 [hub-1] Received REPLICATE_RESPONSE from hub-1
+2021/01/16 23:37:06 [hub-1] Sending REPLICATE_REQUEST to ref-3
+2021/01/16 23:37:06 [ref-3] Sending SUBNET_REQUEST to hub-1
+2021/01/16 23:37:06 [ref-3] Received SUBNET_RESPONSE from ref-3
+2021/01/16 23:37:06 [ref-3] Sending CHUNK_REQUEST to node-2
+2021/01/16 23:37:06 [ref-3] Sending CHUNK_REQUEST to node-3
+2021/01/16 23:37:06 [ref-3] Sending CHUNK_REQUEST to node-2
+2021/01/16 23:37:06 [ref-3] Sending CHUNK_REQUEST to node-3
+2021/01/16 23:37:06 [ref-3] Sending CHUNK_REQUEST to ref-2
+2021/01/16 23:37:06 [ref-3] Sending CHUNK_REQUEST to node-2
+2021/01/16 23:37:06 [ref-3] Sending CHUNK_REQUEST to ref-1
+2021/01/16 23:37:06 [ref-3] Sending CHUNK_REQUEST to node-3
+2021/01/16 23:37:06 [ref-3] Sending CHUNK_REQUEST to node-2
+2021/01/16 23:37:06 [ref-3] Sending CHUNK_REQUEST to ref-1
+2021/01/16 23:37:06 [ref-3] Sending CHUNK_REQUEST to ref-1
+2021/01/16 23:37:06 [ref-3] Sending CHUNK_REQUEST to node-1
+2021/01/16 23:37:06 [ref-3] Sending CHUNK_REQUEST to node-1
+2021/01/16 23:37:06 [ref-3] Sending CHUNK_REQUEST to node-3
+2021/01/16 23:37:06 [ref-3] Sending CHUNK_REQUEST to ref-2
+2021/01/16 23:37:06 [ref-3] Sending CHUNK_REQUEST to node-1
+2021/01/16 23:37:06 [ref-3] Sending CHUNK_REQUEST to ref-2
+2021/01/16 23:37:06 [ref-3] Sending CHUNK_REQUEST to ref-1
+2021/01/16 23:37:06 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:37:06 [ref-3] Sending CHUNK_REQUEST to ref-1
+2021/01/16 23:37:06 [ref-3] Sending CHUNK_REQUEST to ref-1
+2021/01/16 23:37:06 [ref-3] Sending CHUNK_REQUEST to node-1
+2021/01/16 23:37:06 [ref-3] Sending CHUNK_REQUEST to ref-1
+2021/01/16 23:37:06 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:37:06 [ref-3] Sending CHUNK_REQUEST to node-3
+2021/01/16 23:37:06 [ref-3] Sending CHUNK_REQUEST to ref-1
+2021/01/16 23:37:06 [ref-3] Sending CHUNK_REQUEST to node-1
+2021/01/16 23:37:06 [ref-3] Sending CHUNK_REQUEST to ref-2
+2021/01/16 23:37:06 [ref-3] Sending CHUNK_REQUEST to ref-1
+2021/01/16 23:37:06 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:37:06 [ref-3] Sending CHUNK_REQUEST to ref-1
+2021/01/16 23:37:06 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:37:06 [ref-3] Sending CHUNK_REQUEST to node-2
+2021/01/16 23:37:06 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:37:06 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:37:06 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:37:06 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:37:06 [ref-3] Sending CHUNK_REQUEST to ref-1
+2021/01/16 23:37:06 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:37:06 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:37:06 [ref-3] Sending CHUNK_REQUEST to node-3
+2021/01/16 23:37:06 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:37:06 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:37:06 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:37:06 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:37:06 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:37:06 [ref-3] Sending CHUNK_REQUEST to ref-1
+2021/01/16 23:37:06 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:37:06 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:37:06 [ref-3] Sending CHUNK_REQUEST to node-3
+2021/01/16 23:37:06 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:37:06 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:37:06 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:37:06 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:37:06 [ref-3] Sending CHUNK_REQUEST to node-3
+2021/01/16 23:37:06 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:37:06 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:37:06 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:37:06 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:37:06 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:37:06 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:37:06 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:37:06 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:37:06 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:37:06 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:37:06 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:37:06 [ref-3] Sending CHUNK_REQUEST to node-3
+2021/01/16 23:37:06 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:37:06 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:37:06 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:37:06 [hub-1] Received REPLICATE_RESPONSE from hub-1
+2021/01/16 23:37:06 [hub-1] ============================================================
+2021/01/16 23:37:06 [hub-1] Testing ClientLocalSearchWithResults ...
+2021/01/16 23:37:06 [hub-1] Sending LOCAL_SEARCH_REQUEST to node-1
+2021/01/16 23:37:21 [hub-1] Node node-1 - torr: connection error StubbornRead: read tcp 127.0.0.1:64441->127.0.0.1:5011: i/o timeout
+2021/01/16 23:37:21 [hub-1] Node node-1 - torr: unexpected response ClientLocalSearchWithResults: Request failed with torr: connection error StubbornRead: read tcp 127.0.0.1:64441->127.0.0.1:5011: i/o timeout
+2021/01/16 23:37:21 [hub-1] Sending LOCAL_SEARCH_REQUEST to ref-1
+2021/01/16 23:37:21 [hub-1] Received LOCAL_SEARCH_RESPONSE from hub-1
+2021/01/16 23:37:21 [hub-1] Sending LOCAL_SEARCH_REQUEST to node-1
+2021/01/16 23:37:36 [hub-1] Node node-1 - torr: connection error StubbornRead: read tcp 127.0.0.1:64444->127.0.0.1:5011: i/o timeout
+2021/01/16 23:37:36 [hub-1] Node node-1 - torr: unexpected response ClientLocalSearchWithResults: Request failed with torr: connection error StubbornRead: read tcp 127.0.0.1:64444->127.0.0.1:5011: i/o timeout
+2021/01/16 23:37:36 [hub-1] Sending LOCAL_SEARCH_REQUEST to ref-1
+2021/01/16 23:37:36 [hub-1] Received LOCAL_SEARCH_RESPONSE from hub-1
+2021/01/16 23:37:36 [hub-1] Sending LOCAL_SEARCH_REQUEST to node-2
+2021/01/16 23:37:42 [hub-1] Node node-2 - torr: connection error StubbornRead: read tcp 127.0.0.1:64447->127.0.0.1:5012: wsarecv: An existing connection was forcibly closed by the remote host.
+2021/01/16 23:37:42 [hub-1] Node node-2 - torr: unexpected response ClientLocalSearchWithResults: Request failed with torr: connection error StubbornRead: read tcp 127.0.0.1:64447->127.0.0.1:5012: wsarecv: An existing connection was forcibly closed by the remote host.
+2021/01/16 23:37:42 [hub-1] Sending LOCAL_SEARCH_REQUEST to ref-2
+2021/01/16 23:37:42 [hub-1] Received LOCAL_SEARCH_RESPONSE from hub-1
+2021/01/16 23:37:42 [hub-1] Sending LOCAL_SEARCH_REQUEST to node-2
+2021/01/16 23:37:44 [hub-1] Node node-2 - torr: connection error SendRecv: dial tcp 127.0.0.1:5012: connectex: No connection could be made because the target machine actively refused it.
+2021/01/16 23:37:44 [hub-1] Node node-2 - torr: unexpected response ClientLocalSearchWithResults: Request failed with torr: connection error SendRecv: dial tcp 127.0.0.1:5012: connectex: No connection could be made because the target machine actively refused it.
+2021/01/16 23:37:44 [hub-1] Sending LOCAL_SEARCH_REQUEST to ref-2
+2021/01/16 23:37:44 [hub-1] Received LOCAL_SEARCH_RESPONSE from hub-1
+2021/01/16 23:37:44 [hub-1] Sending LOCAL_SEARCH_REQUEST to node-3
+2021/01/16 23:38:30 ========================================================================================================================
+2021/01/16 23:38:30 [ref-1] Registering ...
+2021/01/16 23:38:30 [ref-1] Sending REGISTRATION_REQUEST to hub-1
+2021/01/16 23:38:30 [hub-1] Listening on 127.0.0.1:5000
+2021/01/16 23:38:30 [ref-2] Registering ...
+2021/01/16 23:38:30 [ref-2] Sending REGISTRATION_REQUEST to hub-1
+2021/01/16 23:38:30 [ref-3] Registering ...
+2021/01/16 23:38:30 [ref-3] Sending REGISTRATION_REQUEST to hub-1
+2021/01/16 23:38:30 [ref-1] Received REGISTRATION_RESPONSE from ref-1
+2021/01/16 23:38:30 [ref-1] Listening on 127.0.0.1:5001
+2021/01/16 23:38:30 [ref-2] Received REGISTRATION_RESPONSE from ref-2
+2021/01/16 23:38:30 [ref-2] Listening on 127.0.0.1:5002
+2021/01/16 23:38:30 [ref-3] Received REGISTRATION_RESPONSE from ref-3
+2021/01/16 23:38:30 [ref-3] Listening on 127.0.0.1:5003
+2021/01/16 23:38:35 [hub-1] Sending UPLOAD_REQUEST to node-1
+2021/01/16 23:38:35 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:38:35 [hub-1] Sending UPLOAD_REQUEST to node-2
+2021/01/16 23:38:35 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:38:35 [hub-1] Sending UPLOAD_REQUEST to node-3
+2021/01/16 23:38:35 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:38:35 [hub-1] Sending UPLOAD_REQUEST to ref-1
+2021/01/16 23:38:35 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:38:35 [hub-1] Sending UPLOAD_REQUEST to ref-2
+2021/01/16 23:38:35 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:38:35 [hub-1] Sending UPLOAD_REQUEST to ref-3
+2021/01/16 23:38:35 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:38:35 [hub-1] Active nodes: node-1 node-2 node-3 ref-1 ref-2 ref-3
+2021/01/16 23:38:35 [hub-1] Group A: node-1 ref-1
+2021/01/16 23:38:35 [hub-1] Group B: node-2 ref-2
+2021/01/16 23:38:35 [hub-1] Group C: node-3 ref-3
+2021/01/16 23:38:35 [hub-1] ============================================================
+2021/01/16 23:38:35 [hub-1] Testing ClientUpload ...
+2021/01/16 23:38:35 [hub-1] Sending UPLOAD_REQUEST to node-1
+2021/01/16 23:38:35 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:38:35 [hub-1] Sending UPLOAD_REQUEST to ref-1
+2021/01/16 23:38:35 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:38:35 [hub-1] Sending UPLOAD_REQUEST to node-2
+2021/01/16 23:38:35 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:38:35 [hub-1] Sending UPLOAD_REQUEST to ref-2
+2021/01/16 23:38:35 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:38:35 [hub-1] Sending UPLOAD_REQUEST to node-3
+2021/01/16 23:38:35 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:38:35 [hub-1] Sending UPLOAD_REQUEST to ref-3
+2021/01/16 23:38:35 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:38:35 [hub-1] ============================================================
+2021/01/16 23:38:35 [hub-1] Testing ClientReplicate ...
+2021/01/16 23:38:35 [hub-1] Sending REPLICATE_REQUEST to node-1
+2021/01/16 23:38:35 [hub-1] Received REPLICATE_RESPONSE from hub-1
+2021/01/16 23:38:35 [hub-1] Sending REPLICATE_REQUEST to ref-1
+2021/01/16 23:38:35 [ref-1] Sending SUBNET_REQUEST to hub-1
+2021/01/16 23:38:35 [ref-1] Received SUBNET_RESPONSE from ref-1
+2021/01/16 23:38:35 [ref-1] Sending CHUNK_REQUEST to node-3
+2021/01/16 23:38:35 [ref-1] Sending CHUNK_REQUEST to node-2
+2021/01/16 23:38:35 [ref-1] Sending CHUNK_REQUEST to node-1
+2021/01/16 23:38:35 [ref-1] Sending CHUNK_REQUEST to ref-3
+2021/01/16 23:38:35 [ref-1] Sending CHUNK_REQUEST to node-2
+2021/01/16 23:38:35 [ref-1] Sending CHUNK_REQUEST to ref-3
+2021/01/16 23:38:35 [ref-1] Sending CHUNK_REQUEST to node-2
+2021/01/16 23:38:35 [ref-1] Sending CHUNK_REQUEST to ref-2
+2021/01/16 23:38:35 [ref-1] Sending CHUNK_REQUEST to ref-3
+2021/01/16 23:38:35 [ref-1] Sending CHUNK_REQUEST to node-1
+2021/01/16 23:38:35 [ref-1] Sending CHUNK_REQUEST to ref-2
+2021/01/16 23:38:35 [ref-1] Sending CHUNK_REQUEST to ref-3
+2021/01/16 23:38:35 [ref-1] Sending CHUNK_REQUEST to ref-3
+2021/01/16 23:38:35 [ref-1] Sending CHUNK_REQUEST to ref-3
+2021/01/16 23:38:35 [ref-1] Sending CHUNK_REQUEST to node-1
+2021/01/16 23:38:35 [ref-1] Sending CHUNK_REQUEST to node-3
+2021/01/16 23:38:35 [ref-1] Sending CHUNK_REQUEST to ref-3
+2021/01/16 23:38:35 [ref-1] Sending CHUNK_REQUEST to node-3
+2021/01/16 23:38:35 [ref-1] Sending CHUNK_REQUEST to ref-2
+2021/01/16 23:38:35 [ref-1] Sending CHUNK_REQUEST to ref-2
+2021/01/16 23:38:35 [ref-1] Sending CHUNK_REQUEST to node-3
+2021/01/16 23:38:35 [ref-1] Sending CHUNK_REQUEST to ref-3
+2021/01/16 23:38:35 [ref-1] Sending CHUNK_REQUEST to node-1
+2021/01/16 23:38:35 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:38:35 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:38:35 [ref-1] Sending CHUNK_REQUEST to ref-2
+2021/01/16 23:38:35 [ref-1] Sending CHUNK_REQUEST to node-2
+2021/01/16 23:38:35 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:38:35 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:38:35 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:38:35 [ref-1] Sending CHUNK_REQUEST to node-1
+2021/01/16 23:38:35 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:38:35 [ref-1] Sending CHUNK_REQUEST to node-1
+2021/01/16 23:38:35 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:38:35 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:38:35 [ref-1] Sending CHUNK_REQUEST to node-1
+2021/01/16 23:38:35 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:38:35 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:38:35 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:38:35 [ref-1] Sending CHUNK_REQUEST to ref-2
+2021/01/16 23:38:35 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:38:35 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:38:35 [ref-1] Sending CHUNK_REQUEST to node-1
+2021/01/16 23:38:35 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:38:35 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:38:35 [ref-1] Sending CHUNK_REQUEST to node-1
+2021/01/16 23:38:35 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:38:35 [ref-1] Sending CHUNK_REQUEST to ref-2
+2021/01/16 23:38:35 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:38:35 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:38:35 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:38:35 [ref-1] Sending CHUNK_REQUEST to node-1
+2021/01/16 23:38:35 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:38:35 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:38:35 [ref-1] Sending CHUNK_REQUEST to ref-2
+2021/01/16 23:38:35 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:38:35 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:38:35 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:38:35 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:38:35 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:38:35 [ref-1] Sending CHUNK_REQUEST to node-1
+2021/01/16 23:38:35 [ref-1] Sending CHUNK_REQUEST to node-1
+2021/01/16 23:38:35 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:38:35 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:38:35 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:38:35 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:38:35 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:38:35 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:38:35 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:38:35 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:38:35 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:38:35 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:38:35 [hub-1] Received REPLICATE_RESPONSE from hub-1
+2021/01/16 23:38:35 [hub-1] Sending REPLICATE_REQUEST to node-2
+2021/01/16 23:38:35 [hub-1] Received REPLICATE_RESPONSE from hub-1
+2021/01/16 23:38:35 [hub-1] Sending REPLICATE_REQUEST to ref-2
+2021/01/16 23:38:35 [ref-2] Sending SUBNET_REQUEST to hub-1
+2021/01/16 23:38:35 [ref-2] Received SUBNET_RESPONSE from ref-2
+2021/01/16 23:38:35 [ref-2] Sending CHUNK_REQUEST to ref-3
+2021/01/16 23:38:35 [ref-2] Sending CHUNK_REQUEST to node-3
+2021/01/16 23:38:35 [ref-2] Sending CHUNK_REQUEST to ref-1
+2021/01/16 23:38:35 [ref-2] Sending CHUNK_REQUEST to node-1
+2021/01/16 23:38:35 [ref-2] Sending CHUNK_REQUEST to node-1
+2021/01/16 23:38:35 [ref-2] Sending CHUNK_REQUEST to ref-1
+2021/01/16 23:38:35 [ref-2] Sending CHUNK_REQUEST to node-2
+2021/01/16 23:38:35 [ref-2] Sending CHUNK_REQUEST to node-3
+2021/01/16 23:38:35 [ref-2] Sending CHUNK_REQUEST to ref-1
+2021/01/16 23:38:35 [ref-2] Sending CHUNK_REQUEST to node-3
+2021/01/16 23:38:35 [ref-2] Sending CHUNK_REQUEST to ref-1
+2021/01/16 23:38:35 [ref-2] Sending CHUNK_REQUEST to node-2
+2021/01/16 23:38:35 [ref-2] Sending CHUNK_REQUEST to node-1
+2021/01/16 23:38:35 [ref-2] Sending CHUNK_REQUEST to ref-1
+2021/01/16 23:38:35 [ref-2] Sending CHUNK_REQUEST to node-2
+2021/01/16 23:38:35 [ref-2] Sending CHUNK_REQUEST to ref-1
+2021/01/16 23:38:35 [ref-2] Sending CHUNK_REQUEST to ref-3
+2021/01/16 23:38:35 [ref-2] Sending CHUNK_REQUEST to ref-3
+2021/01/16 23:38:35 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:38:35 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:38:35 [ref-2] Sending CHUNK_REQUEST to ref-3
+2021/01/16 23:38:35 [ref-2] Sending CHUNK_REQUEST to node-1
+2021/01/16 23:38:35 [ref-2] Sending CHUNK_REQUEST to node-2
+2021/01/16 23:38:35 [ref-2] Sending CHUNK_REQUEST to ref-1
+2021/01/16 23:38:35 [ref-2] Sending CHUNK_REQUEST to ref-1
+2021/01/16 23:38:35 [ref-2] Sending CHUNK_REQUEST to node-3
+2021/01/16 23:38:35 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:38:35 [ref-2] Sending CHUNK_REQUEST to ref-3
+2021/01/16 23:38:35 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:38:35 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:38:35 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:38:35 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:38:35 [ref-2] Sending CHUNK_REQUEST to node-2
+2021/01/16 23:38:35 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:38:35 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:38:35 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:38:35 [ref-2] Sending CHUNK_REQUEST to ref-3
+2021/01/16 23:38:35 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:38:35 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:38:35 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:38:35 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:38:35 [ref-2] Sending CHUNK_REQUEST to ref-3
+2021/01/16 23:38:35 [ref-2] Sending CHUNK_REQUEST to node-2
+2021/01/16 23:38:35 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:38:35 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:38:35 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:38:35 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:38:35 [ref-2] Sending CHUNK_REQUEST to ref-3
+2021/01/16 23:38:35 [ref-2] Sending CHUNK_REQUEST to ref-3
+2021/01/16 23:38:35 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:38:35 [ref-2] Sending CHUNK_REQUEST to ref-3
+2021/01/16 23:38:35 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:38:35 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:38:35 [ref-2] Sending CHUNK_REQUEST to node-2
+2021/01/16 23:38:35 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:38:35 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:38:35 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:38:35 [ref-2] Sending CHUNK_REQUEST to ref-3
+2021/01/16 23:38:35 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:38:35 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:38:35 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:38:35 [ref-2] Sending CHUNK_REQUEST to node-2
+2021/01/16 23:38:35 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:38:35 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:38:35 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:38:35 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:38:35 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:38:35 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:38:35 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:38:35 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:38:35 [hub-1] Received REPLICATE_RESPONSE from hub-1
+2021/01/16 23:38:35 [hub-1] Sending REPLICATE_REQUEST to node-3
+2021/01/16 23:38:35 [hub-1] Received REPLICATE_RESPONSE from hub-1
+2021/01/16 23:38:35 [hub-1] Sending REPLICATE_REQUEST to ref-3
+2021/01/16 23:38:35 [ref-3] Sending SUBNET_REQUEST to hub-1
+2021/01/16 23:38:35 [ref-3] Received SUBNET_RESPONSE from ref-3
+2021/01/16 23:38:35 [ref-3] Sending CHUNK_REQUEST to node-1
+2021/01/16 23:38:35 [ref-3] Sending CHUNK_REQUEST to node-2
+2021/01/16 23:38:35 [ref-3] Sending CHUNK_REQUEST to node-2
+2021/01/16 23:38:35 [ref-3] Sending CHUNK_REQUEST to ref-1
+2021/01/16 23:38:35 [ref-3] Sending CHUNK_REQUEST to node-3
+2021/01/16 23:38:35 [ref-3] Sending CHUNK_REQUEST to node-1
+2021/01/16 23:38:35 [ref-3] Sending CHUNK_REQUEST to ref-2
+2021/01/16 23:38:35 [ref-3] Sending CHUNK_REQUEST to node-3
+2021/01/16 23:38:35 [ref-3] Sending CHUNK_REQUEST to node-3
+2021/01/16 23:38:35 [ref-3] Sending CHUNK_REQUEST to node-1
+2021/01/16 23:38:35 [ref-3] Sending CHUNK_REQUEST to ref-2
+2021/01/16 23:38:35 [ref-3] Sending CHUNK_REQUEST to node-1
+2021/01/16 23:38:35 [ref-3] Sending CHUNK_REQUEST to ref-1
+2021/01/16 23:38:35 [ref-3] Sending CHUNK_REQUEST to node-1
+2021/01/16 23:38:35 [ref-3] Sending CHUNK_REQUEST to node-2
+2021/01/16 23:38:35 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:38:35 [ref-3] Sending CHUNK_REQUEST to node-1
+2021/01/16 23:38:35 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:38:35 [ref-3] Sending CHUNK_REQUEST to node-3
+2021/01/16 23:38:35 [ref-3] Sending CHUNK_REQUEST to ref-1
+2021/01/16 23:38:35 [ref-3] Sending CHUNK_REQUEST to ref-1
+2021/01/16 23:38:35 [ref-3] Sending CHUNK_REQUEST to node-1
+2021/01/16 23:38:35 [ref-3] Sending CHUNK_REQUEST to node-2
+2021/01/16 23:38:35 [ref-3] Sending CHUNK_REQUEST to ref-2
+2021/01/16 23:38:35 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:38:35 [ref-3] Sending CHUNK_REQUEST to ref-2
+2021/01/16 23:38:35 [ref-3] Sending CHUNK_REQUEST to node-3
+2021/01/16 23:38:35 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:38:35 [ref-3] Sending CHUNK_REQUEST to ref-1
+2021/01/16 23:38:35 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:38:35 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:38:35 [ref-3] Sending CHUNK_REQUEST to ref-1
+2021/01/16 23:38:35 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:38:35 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:38:35 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:38:35 [ref-3] Sending CHUNK_REQUEST to node-3
+2021/01/16 23:38:35 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:38:35 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:38:35 [ref-3] Sending CHUNK_REQUEST to ref-1
+2021/01/16 23:38:35 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:38:35 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:38:35 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:38:35 [ref-3] Sending CHUNK_REQUEST to node-3
+2021/01/16 23:38:35 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:38:35 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:38:35 [ref-3] Sending CHUNK_REQUEST to ref-1
+2021/01/16 23:38:35 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:38:35 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:38:35 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:38:35 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:38:35 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:38:35 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:38:35 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:38:35 [ref-3] Sending CHUNK_REQUEST to node-3
+2021/01/16 23:38:35 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:38:35 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:38:35 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:38:35 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:38:35 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:38:35 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:38:35 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:38:35 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:38:35 [hub-1] Received REPLICATE_RESPONSE from hub-1
+2021/01/16 23:38:35 [hub-1] ============================================================
+2021/01/16 23:38:35 [hub-1] Testing ClientLocalSearchWithResults ...
+2021/01/16 23:38:35 [hub-1] Sending LOCAL_SEARCH_REQUEST to node-1
+2021/01/16 23:38:35 [hub-1] Received LOCAL_SEARCH_RESPONSE from hub-1
+2021/01/16 23:38:35 [hub-1] Sending LOCAL_SEARCH_REQUEST to ref-1
+2021/01/16 23:38:35 [hub-1] Received LOCAL_SEARCH_RESPONSE from hub-1
+2021/01/16 23:38:35 [hub-1] Sending LOCAL_SEARCH_REQUEST to node-1
+2021/01/16 23:38:35 [hub-1] Received LOCAL_SEARCH_RESPONSE from hub-1
+2021/01/16 23:38:35 [hub-1] Sending LOCAL_SEARCH_REQUEST to ref-1
+2021/01/16 23:38:35 [hub-1] Received LOCAL_SEARCH_RESPONSE from hub-1
+2021/01/16 23:38:35 [hub-1] Sending LOCAL_SEARCH_REQUEST to node-2
+2021/01/16 23:38:35 [hub-1] Received LOCAL_SEARCH_RESPONSE from hub-1
+2021/01/16 23:38:35 [hub-1] Sending LOCAL_SEARCH_REQUEST to ref-2
+2021/01/16 23:38:35 [hub-1] Received LOCAL_SEARCH_RESPONSE from hub-1
+2021/01/16 23:38:35 [hub-1] Sending LOCAL_SEARCH_REQUEST to node-2
+2021/01/16 23:38:35 [hub-1] Received LOCAL_SEARCH_RESPONSE from hub-1
+2021/01/16 23:38:35 [hub-1] Sending LOCAL_SEARCH_REQUEST to ref-2
+2021/01/16 23:38:35 [hub-1] Received LOCAL_SEARCH_RESPONSE from hub-1
+2021/01/16 23:38:35 [hub-1] Sending LOCAL_SEARCH_REQUEST to node-3
+2021/01/16 23:38:35 [hub-1] Received LOCAL_SEARCH_RESPONSE from hub-1
+2021/01/16 23:38:35 [hub-1] Sending LOCAL_SEARCH_REQUEST to ref-3
+2021/01/16 23:38:35 [hub-1] Received LOCAL_SEARCH_RESPONSE from hub-1
+2021/01/16 23:38:35 [hub-1] Sending LOCAL_SEARCH_REQUEST to node-3
+2021/01/16 23:38:35 [hub-1] Received LOCAL_SEARCH_RESPONSE from hub-1
+2021/01/16 23:38:35 [hub-1] Sending LOCAL_SEARCH_REQUEST to ref-3
+2021/01/16 23:38:35 [hub-1] Received LOCAL_SEARCH_RESPONSE from hub-1
+2021/01/16 23:38:35 [hub-1] ============================================================
+2021/01/16 23:38:35 [hub-1] Testing ClientLocalSearchNoResults ...
+2021/01/16 23:38:35 [hub-1] Sending LOCAL_SEARCH_REQUEST to node-1
+2021/01/16 23:38:35 [hub-1] Received LOCAL_SEARCH_RESPONSE from hub-1
+2021/01/16 23:38:35 [hub-1] Sending LOCAL_SEARCH_REQUEST to ref-1
+2021/01/16 23:38:35 [hub-1] Received LOCAL_SEARCH_RESPONSE from hub-1
+2021/01/16 23:38:35 [hub-1] Sending LOCAL_SEARCH_REQUEST to node-2
+2021/01/16 23:38:35 [hub-1] Received LOCAL_SEARCH_RESPONSE from hub-1
+2021/01/16 23:38:35 [hub-1] Sending LOCAL_SEARCH_REQUEST to ref-2
+2021/01/16 23:38:35 [hub-1] Received LOCAL_SEARCH_RESPONSE from hub-1
+2021/01/16 23:38:35 [hub-1] Sending LOCAL_SEARCH_REQUEST to node-3
+2021/01/16 23:38:35 [hub-1] Received LOCAL_SEARCH_RESPONSE from hub-1
+2021/01/16 23:38:35 [hub-1] Sending LOCAL_SEARCH_REQUEST to ref-3
+2021/01/16 23:38:35 [hub-1] Received LOCAL_SEARCH_RESPONSE from hub-1
+2021/01/16 23:38:35 [hub-1] ============================================================
+2021/01/16 23:38:35 [hub-1] Testing ClientSearch ...
+2021/01/16 23:38:35 [hub-1] Sending SEARCH_REQUEST to node-1
+2021/01/16 23:38:35 [hub-1] Received SEARCH_RESPONSE from hub-1
+2021/01/16 23:38:35 [hub-1] Node node-1 - torr: invalid message SearchResponse: Node node-1 missing from the search results
+2021/01/16 23:38:35 [hub-1] Node node-1 - torr: invalid message SearchResponse: Node node-2 missing from the search results
+2021/01/16 23:38:35 [hub-1] Node node-1 - torr: invalid message SearchResponse: Node node-3 missing from the search results
+2021/01/16 23:38:35 [hub-1] Node node-1 - torr: invalid message SearchResponse: Node ref-2 missing from the search results
+2021/01/16 23:38:35 [hub-1] Node node-1 - torr: invalid message SearchResponse: Node ref-1 missing from the search results
+2021/01/16 23:38:35 [hub-1] Node node-1 - torr: invalid message SearchResponse: Node ref-3 missing from the search results
+2021/01/16 23:38:35 [hub-1] Sending SEARCH_REQUEST to ref-1
+2021/01/16 23:38:35 [ref-1] Sending SUBNET_REQUEST to hub-1
+2021/01/16 23:38:35 [ref-1] Received SUBNET_RESPONSE from ref-1
+2021/01/16 23:38:35 [ref-1] Sending LOCAL_SEARCH_REQUEST to ref-3
+2021/01/16 23:38:35 [ref-1] Sending LOCAL_SEARCH_REQUEST to node-2
+2021/01/16 23:38:35 [ref-1] Sending LOCAL_SEARCH_REQUEST to node-3
+2021/01/16 23:38:35 [ref-1] Sending LOCAL_SEARCH_REQUEST to node-1
+2021/01/16 23:38:35 [ref-1] Sending LOCAL_SEARCH_REQUEST to ref-2
+2021/01/16 23:38:35 [ref-1] Received LOCAL_SEARCH_RESPONSE from ref-1
+2021/01/16 23:38:35 [ref-1] Received LOCAL_SEARCH_RESPONSE from ref-1
+2021/01/16 23:38:35 [ref-1] Received LOCAL_SEARCH_RESPONSE from ref-1
+2021/01/16 23:38:35 [ref-1] Received LOCAL_SEARCH_RESPONSE from ref-1
+2021/01/16 23:38:35 [ref-1] Received LOCAL_SEARCH_RESPONSE from ref-1
+2021/01/16 23:38:35 [hub-1] Received SEARCH_RESPONSE from hub-1
+2021/01/16 23:38:35 [hub-1] Sending SEARCH_REQUEST to node-1
+2021/01/16 23:38:35 [hub-1] Received SEARCH_RESPONSE from hub-1
+2021/01/16 23:38:35 [hub-1] Node node-1 - torr: invalid message SearchResponse: Node node-1 missing from the search results
+2021/01/16 23:38:35 [hub-1] Node node-1 - torr: invalid message SearchResponse: Node node-2 missing from the search results
+2021/01/16 23:38:35 [hub-1] Node node-1 - torr: invalid message SearchResponse: Node node-3 missing from the search results
+2021/01/16 23:38:35 [hub-1] Node node-1 - torr: invalid message SearchResponse: Node ref-2 missing from the search results
+2021/01/16 23:38:35 [hub-1] Node node-1 - torr: invalid message SearchResponse: Node ref-1 missing from the search results
+2021/01/16 23:38:35 [hub-1] Node node-1 - torr: invalid message SearchResponse: Node ref-3 missing from the search results
+2021/01/16 23:38:35 [hub-1] Sending SEARCH_REQUEST to ref-1
+2021/01/16 23:38:35 [ref-1] Sending SUBNET_REQUEST to hub-1
+2021/01/16 23:38:36 [ref-1] Received SUBNET_RESPONSE from ref-1
+2021/01/16 23:38:36 [ref-1] Sending LOCAL_SEARCH_REQUEST to ref-3
+2021/01/16 23:38:36 [ref-1] Sending LOCAL_SEARCH_REQUEST to node-2
+2021/01/16 23:38:36 [ref-1] Sending LOCAL_SEARCH_REQUEST to node-1
+2021/01/16 23:38:36 [ref-1] Sending LOCAL_SEARCH_REQUEST to node-3
+2021/01/16 23:38:36 [ref-1] Sending LOCAL_SEARCH_REQUEST to ref-2
+2021/01/16 23:38:36 [ref-1] Received LOCAL_SEARCH_RESPONSE from ref-1
+2021/01/16 23:38:36 [ref-1] Received LOCAL_SEARCH_RESPONSE from ref-1
+2021/01/16 23:38:36 [ref-1] Received LOCAL_SEARCH_RESPONSE from ref-1
+2021/01/16 23:38:36 [ref-1] Received LOCAL_SEARCH_RESPONSE from ref-1
+2021/01/16 23:38:36 [ref-1] Received LOCAL_SEARCH_RESPONSE from ref-1
+2021/01/16 23:38:36 [hub-1] Received SEARCH_RESPONSE from hub-1
+2021/01/16 23:38:36 [hub-1] Sending SEARCH_REQUEST to node-1
+2021/01/16 23:38:36 [hub-1] Received SEARCH_RESPONSE from hub-1
+2021/01/16 23:38:36 [hub-1] Node node-1 - torr: invalid message SearchResponse: Node node-1 missing from the search results
+2021/01/16 23:38:36 [hub-1] Node node-1 - torr: invalid message SearchResponse: Node node-2 missing from the search results
+2021/01/16 23:38:36 [hub-1] Node node-1 - torr: invalid message SearchResponse: Node node-3 missing from the search results
+2021/01/16 23:38:36 [hub-1] Node node-1 - torr: invalid message SearchResponse: Node ref-2 missing from the search results
+2021/01/16 23:38:36 [hub-1] Node node-1 - torr: invalid message SearchResponse: Node ref-1 missing from the search results
+2021/01/16 23:38:36 [hub-1] Node node-1 - torr: invalid message SearchResponse: Node ref-3 missing from the search results
+2021/01/16 23:38:36 [hub-1] Sending SEARCH_REQUEST to ref-1
+2021/01/16 23:38:36 [ref-1] Sending SUBNET_REQUEST to hub-1
+2021/01/16 23:38:36 [ref-1] Received SUBNET_RESPONSE from ref-1
+2021/01/16 23:38:36 [ref-1] Sending LOCAL_SEARCH_REQUEST to ref-3
+2021/01/16 23:38:36 [ref-1] Sending LOCAL_SEARCH_REQUEST to node-2
+2021/01/16 23:38:36 [ref-1] Sending LOCAL_SEARCH_REQUEST to node-1
+2021/01/16 23:38:36 [ref-1] Sending LOCAL_SEARCH_REQUEST to node-3
+2021/01/16 23:38:36 [ref-1] Sending LOCAL_SEARCH_REQUEST to ref-2
+2021/01/16 23:38:36 [ref-1] Received LOCAL_SEARCH_RESPONSE from ref-1
+2021/01/16 23:38:36 [ref-1] Received LOCAL_SEARCH_RESPONSE from ref-1
+2021/01/16 23:38:36 [ref-1] Received LOCAL_SEARCH_RESPONSE from ref-1
+2021/01/16 23:38:36 [ref-1] Received LOCAL_SEARCH_RESPONSE from ref-1
+2021/01/16 23:38:36 [ref-1] Received LOCAL_SEARCH_RESPONSE from ref-1
+2021/01/16 23:38:36 [hub-1] Received SEARCH_RESPONSE from hub-1
+2021/01/16 23:38:36 [hub-1] Sending SEARCH_REQUEST to node-2
+2021/01/16 23:38:36 [hub-1] Received SEARCH_RESPONSE from hub-1
+2021/01/16 23:38:36 [hub-1] Node node-2 - torr: invalid message SearchResponse: Node node-1 missing from the search results
+2021/01/16 23:38:36 [hub-1] Node node-2 - torr: invalid message SearchResponse: Node node-2 missing from the search results
+2021/01/16 23:38:36 [hub-1] Node node-2 - torr: invalid message SearchResponse: Node node-3 missing from the search results
+2021/01/16 23:38:36 [hub-1] Node node-2 - torr: invalid message SearchResponse: Node ref-2 missing from the search results
+2021/01/16 23:38:36 [hub-1] Node node-2 - torr: invalid message SearchResponse: Node ref-1 missing from the search results
+2021/01/16 23:38:36 [hub-1] Node node-2 - torr: invalid message SearchResponse: Node ref-3 missing from the search results
+2021/01/16 23:38:36 [hub-1] Sending SEARCH_REQUEST to ref-2
+2021/01/16 23:38:36 [ref-2] Sending SUBNET_REQUEST to hub-1
+2021/01/16 23:38:36 [ref-2] Received SUBNET_RESPONSE from ref-2
+2021/01/16 23:38:36 [ref-2] Sending LOCAL_SEARCH_REQUEST to ref-3
+2021/01/16 23:38:36 [ref-2] Sending LOCAL_SEARCH_REQUEST to node-2
+2021/01/16 23:38:36 [ref-2] Sending LOCAL_SEARCH_REQUEST to node-3
+2021/01/16 23:38:36 [ref-2] Sending LOCAL_SEARCH_REQUEST to node-1
+2021/01/16 23:38:36 [ref-2] Sending LOCAL_SEARCH_REQUEST to ref-1
+2021/01/16 23:38:36 [ref-2] Received LOCAL_SEARCH_RESPONSE from ref-2
+2021/01/16 23:38:36 [ref-2] Received LOCAL_SEARCH_RESPONSE from ref-2
+2021/01/16 23:38:36 [ref-2] Received LOCAL_SEARCH_RESPONSE from ref-2
+2021/01/16 23:38:36 [ref-2] Received LOCAL_SEARCH_RESPONSE from ref-2
+2021/01/16 23:38:36 [ref-2] Received LOCAL_SEARCH_RESPONSE from ref-2
+2021/01/16 23:38:36 [hub-1] Received SEARCH_RESPONSE from hub-1
+2021/01/16 23:38:36 [hub-1] Sending SEARCH_REQUEST to node-2
+2021/01/16 23:38:36 [hub-1] Received SEARCH_RESPONSE from hub-1
+2021/01/16 23:38:36 [hub-1] Node node-2 - torr: invalid message SearchResponse: Node node-1 missing from the search results
+2021/01/16 23:38:36 [hub-1] Node node-2 - torr: invalid message SearchResponse: Node node-2 missing from the search results
+2021/01/16 23:38:36 [hub-1] Node node-2 - torr: invalid message SearchResponse: Node node-3 missing from the search results
+2021/01/16 23:38:36 [hub-1] Node node-2 - torr: invalid message SearchResponse: Node ref-2 missing from the search results
+2021/01/16 23:38:36 [hub-1] Node node-2 - torr: invalid message SearchResponse: Node ref-1 missing from the search results
+2021/01/16 23:38:36 [hub-1] Node node-2 - torr: invalid message SearchResponse: Node ref-3 missing from the search results
+2021/01/16 23:38:36 [hub-1] Sending SEARCH_REQUEST to ref-2
+2021/01/16 23:38:36 [ref-2] Sending SUBNET_REQUEST to hub-1
+2021/01/16 23:38:36 [ref-2] Received SUBNET_RESPONSE from ref-2
+2021/01/16 23:38:36 [ref-2] Sending LOCAL_SEARCH_REQUEST to ref-3
+2021/01/16 23:38:36 [ref-2] Sending LOCAL_SEARCH_REQUEST to node-1
+2021/01/16 23:38:36 [ref-2] Sending LOCAL_SEARCH_REQUEST to node-2
+2021/01/16 23:38:36 [ref-2] Sending LOCAL_SEARCH_REQUEST to node-3
+2021/01/16 23:38:36 [ref-2] Sending LOCAL_SEARCH_REQUEST to ref-1
+2021/01/16 23:38:36 [ref-2] Received LOCAL_SEARCH_RESPONSE from ref-2
+2021/01/16 23:38:36 [ref-2] Received LOCAL_SEARCH_RESPONSE from ref-2
+2021/01/16 23:38:36 [ref-2] Received LOCAL_SEARCH_RESPONSE from ref-2
+2021/01/16 23:38:36 [ref-2] Received LOCAL_SEARCH_RESPONSE from ref-2
+2021/01/16 23:38:36 [ref-2] Received LOCAL_SEARCH_RESPONSE from ref-2
+2021/01/16 23:38:36 [hub-1] Received SEARCH_RESPONSE from hub-1
+2021/01/16 23:38:36 [hub-1] Sending SEARCH_REQUEST to node-2
+2021/01/16 23:38:36 [hub-1] Received SEARCH_RESPONSE from hub-1
+2021/01/16 23:38:36 [hub-1] Node node-2 - torr: invalid message SearchResponse: Node node-1 missing from the search results
+2021/01/16 23:38:36 [hub-1] Node node-2 - torr: invalid message SearchResponse: Node node-2 missing from the search results
+2021/01/16 23:38:36 [hub-1] Node node-2 - torr: invalid message SearchResponse: Node node-3 missing from the search results
+2021/01/16 23:38:36 [hub-1] Node node-2 - torr: invalid message SearchResponse: Node ref-2 missing from the search results
+2021/01/16 23:38:36 [hub-1] Node node-2 - torr: invalid message SearchResponse: Node ref-1 missing from the search results
+2021/01/16 23:38:36 [hub-1] Node node-2 - torr: invalid message SearchResponse: Node ref-3 missing from the search results
+2021/01/16 23:38:36 [hub-1] Sending SEARCH_REQUEST to ref-2
+2021/01/16 23:38:36 [ref-2] Sending SUBNET_REQUEST to hub-1
+2021/01/16 23:38:36 [ref-2] Received SUBNET_RESPONSE from ref-2
+2021/01/16 23:38:36 [ref-2] Sending LOCAL_SEARCH_REQUEST to node-1
+2021/01/16 23:38:36 [ref-2] Sending LOCAL_SEARCH_REQUEST to node-2
+2021/01/16 23:38:36 [ref-2] Sending LOCAL_SEARCH_REQUEST to ref-3
+2021/01/16 23:38:36 [ref-2] Sending LOCAL_SEARCH_REQUEST to node-3
+2021/01/16 23:38:36 [ref-2] Sending LOCAL_SEARCH_REQUEST to ref-1
+2021/01/16 23:38:36 [ref-2] Received LOCAL_SEARCH_RESPONSE from ref-2
+2021/01/16 23:38:36 [ref-2] Received LOCAL_SEARCH_RESPONSE from ref-2
+2021/01/16 23:38:36 [ref-2] Received LOCAL_SEARCH_RESPONSE from ref-2
+2021/01/16 23:38:36 [ref-2] Received LOCAL_SEARCH_RESPONSE from ref-2
+2021/01/16 23:38:36 [ref-2] Received LOCAL_SEARCH_RESPONSE from ref-2
+2021/01/16 23:38:36 [hub-1] Received SEARCH_RESPONSE from hub-1
+2021/01/16 23:38:36 [hub-1] Sending SEARCH_REQUEST to node-3
+2021/01/16 23:38:36 [hub-1] Received SEARCH_RESPONSE from hub-1
+2021/01/16 23:38:36 [hub-1] Node node-3 - torr: invalid message SearchResponse: Node node-1 missing from the search results
+2021/01/16 23:38:36 [hub-1] Node node-3 - torr: invalid message SearchResponse: Node node-2 missing from the search results
+2021/01/16 23:38:36 [hub-1] Node node-3 - torr: invalid message SearchResponse: Node node-3 missing from the search results
+2021/01/16 23:38:36 [hub-1] Node node-3 - torr: invalid message SearchResponse: Node ref-2 missing from the search results
+2021/01/16 23:38:36 [hub-1] Node node-3 - torr: invalid message SearchResponse: Node ref-1 missing from the search results
+2021/01/16 23:38:36 [hub-1] Node node-3 - torr: invalid message SearchResponse: Node ref-3 missing from the search results
+2021/01/16 23:38:36 [hub-1] Sending SEARCH_REQUEST to ref-3
+2021/01/16 23:38:36 [ref-3] Sending SUBNET_REQUEST to hub-1
+2021/01/16 23:38:36 [ref-3] Received SUBNET_RESPONSE from ref-3
+2021/01/16 23:38:36 [ref-3] Sending LOCAL_SEARCH_REQUEST to ref-1
+2021/01/16 23:38:36 [ref-3] Sending LOCAL_SEARCH_REQUEST to node-1
+2021/01/16 23:38:36 [ref-3] Sending LOCAL_SEARCH_REQUEST to node-3
+2021/01/16 23:38:36 [ref-3] Sending LOCAL_SEARCH_REQUEST to ref-2
+2021/01/16 23:38:36 [ref-3] Sending LOCAL_SEARCH_REQUEST to node-2
+2021/01/16 23:38:36 [ref-3] Received LOCAL_SEARCH_RESPONSE from ref-3
+2021/01/16 23:38:36 [ref-3] Received LOCAL_SEARCH_RESPONSE from ref-3
+2021/01/16 23:38:36 [ref-3] Received LOCAL_SEARCH_RESPONSE from ref-3
+2021/01/16 23:38:36 [ref-3] Received LOCAL_SEARCH_RESPONSE from ref-3
+2021/01/16 23:38:36 [ref-3] Received LOCAL_SEARCH_RESPONSE from ref-3
+2021/01/16 23:38:36 [hub-1] Received SEARCH_RESPONSE from hub-1
+2021/01/16 23:38:36 [hub-1] Sending SEARCH_REQUEST to node-3
+2021/01/16 23:38:36 [hub-1] Received SEARCH_RESPONSE from hub-1
+2021/01/16 23:38:36 [hub-1] Node node-3 - torr: invalid message SearchResponse: Node node-1 missing from the search results
+2021/01/16 23:38:36 [hub-1] Node node-3 - torr: invalid message SearchResponse: Node node-2 missing from the search results
+2021/01/16 23:38:36 [hub-1] Node node-3 - torr: invalid message SearchResponse: Node node-3 missing from the search results
+2021/01/16 23:38:36 [hub-1] Node node-3 - torr: invalid message SearchResponse: Node ref-2 missing from the search results
+2021/01/16 23:38:36 [hub-1] Node node-3 - torr: invalid message SearchResponse: Node ref-1 missing from the search results
+2021/01/16 23:38:36 [hub-1] Node node-3 - torr: invalid message SearchResponse: Node ref-3 missing from the search results
+2021/01/16 23:38:36 [hub-1] Sending SEARCH_REQUEST to ref-3
+2021/01/16 23:38:36 [ref-3] Sending SUBNET_REQUEST to hub-1
+2021/01/16 23:38:36 [ref-3] Received SUBNET_RESPONSE from ref-3
+2021/01/16 23:38:36 [ref-3] Sending LOCAL_SEARCH_REQUEST to ref-1
+2021/01/16 23:38:36 [ref-3] Sending LOCAL_SEARCH_REQUEST to node-2
+2021/01/16 23:38:36 [ref-3] Sending LOCAL_SEARCH_REQUEST to node-1
+2021/01/16 23:38:36 [ref-3] Sending LOCAL_SEARCH_REQUEST to node-3
+2021/01/16 23:38:36 [ref-3] Sending LOCAL_SEARCH_REQUEST to ref-2
+2021/01/16 23:38:36 [ref-3] Received LOCAL_SEARCH_RESPONSE from ref-3
+2021/01/16 23:38:36 [ref-3] Received LOCAL_SEARCH_RESPONSE from ref-3
+2021/01/16 23:38:36 [ref-3] Received LOCAL_SEARCH_RESPONSE from ref-3
+2021/01/16 23:38:36 [ref-3] Received LOCAL_SEARCH_RESPONSE from ref-3
+2021/01/16 23:38:36 [ref-3] Received LOCAL_SEARCH_RESPONSE from ref-3
+2021/01/16 23:38:36 [hub-1] Received SEARCH_RESPONSE from hub-1
+2021/01/16 23:38:36 [hub-1] Sending SEARCH_REQUEST to node-3
+2021/01/16 23:38:36 [hub-1] Received SEARCH_RESPONSE from hub-1
+2021/01/16 23:38:36 [hub-1] Node node-3 - torr: invalid message SearchResponse: Node node-1 missing from the search results
+2021/01/16 23:38:36 [hub-1] Node node-3 - torr: invalid message SearchResponse: Node node-2 missing from the search results
+2021/01/16 23:38:36 [hub-1] Node node-3 - torr: invalid message SearchResponse: Node node-3 missing from the search results
+2021/01/16 23:38:36 [hub-1] Node node-3 - torr: invalid message SearchResponse: Node ref-2 missing from the search results
+2021/01/16 23:38:36 [hub-1] Node node-3 - torr: invalid message SearchResponse: Node ref-1 missing from the search results
+2021/01/16 23:38:36 [hub-1] Node node-3 - torr: invalid message SearchResponse: Node ref-3 missing from the search results
+2021/01/16 23:38:36 [hub-1] Sending SEARCH_REQUEST to ref-3
+2021/01/16 23:38:36 [ref-3] Sending SUBNET_REQUEST to hub-1
+2021/01/16 23:38:36 [ref-3] Received SUBNET_RESPONSE from ref-3
+2021/01/16 23:38:36 [ref-3] Sending LOCAL_SEARCH_REQUEST to ref-1
+2021/01/16 23:38:36 [ref-3] Sending LOCAL_SEARCH_REQUEST to node-2
+2021/01/16 23:38:36 [ref-3] Sending LOCAL_SEARCH_REQUEST to node-1
+2021/01/16 23:38:36 [ref-3] Sending LOCAL_SEARCH_REQUEST to node-3
+2021/01/16 23:38:36 [ref-3] Sending LOCAL_SEARCH_REQUEST to ref-2
+2021/01/16 23:38:36 [ref-3] Received LOCAL_SEARCH_RESPONSE from ref-3
+2021/01/16 23:38:36 [ref-3] Received LOCAL_SEARCH_RESPONSE from ref-3
+2021/01/16 23:38:36 [ref-3] Received LOCAL_SEARCH_RESPONSE from ref-3
+2021/01/16 23:38:36 [ref-3] Received LOCAL_SEARCH_RESPONSE from ref-3
+2021/01/16 23:38:36 [ref-3] Received LOCAL_SEARCH_RESPONSE from ref-3
+2021/01/16 23:38:36 [hub-1] Received SEARCH_RESPONSE from hub-1
+2021/01/16 23:38:36 [hub-1] ============================================================
+2021/01/16 23:38:36 [hub-1] Testing ClientDownloadExisting ...
+2021/01/16 23:38:36 [hub-1] Sending DOWNLOAD_REQUEST to node-1
+2021/01/16 23:38:36 [hub-1] Received DOWNLOAD_RESPONSE from hub-1
+2021/01/16 23:38:36 [hub-1] Sending DOWNLOAD_REQUEST to ref-1
+2021/01/16 23:38:36 [hub-1] Received DOWNLOAD_RESPONSE from hub-1
+2021/01/16 23:38:36 [hub-1] Sending DOWNLOAD_REQUEST to node-1
+2021/01/16 23:38:36 [hub-1] Received DOWNLOAD_RESPONSE from hub-1
+2021/01/16 23:38:36 [hub-1] Sending DOWNLOAD_REQUEST to ref-1
+2021/01/16 23:38:36 [hub-1] Received DOWNLOAD_RESPONSE from hub-1
+2021/01/16 23:38:36 [hub-1] Sending DOWNLOAD_REQUEST to node-2
+2021/01/16 23:38:36 [hub-1] Received DOWNLOAD_RESPONSE from hub-1
+2021/01/16 23:38:36 [hub-1] Sending DOWNLOAD_REQUEST to ref-2
+2021/01/16 23:38:36 [hub-1] Received DOWNLOAD_RESPONSE from hub-1
+2021/01/16 23:38:36 [hub-1] Sending DOWNLOAD_REQUEST to node-2
+2021/01/16 23:38:36 [hub-1] Received DOWNLOAD_RESPONSE from hub-1
+2021/01/16 23:38:36 [hub-1] Sending DOWNLOAD_REQUEST to ref-2
+2021/01/16 23:38:36 [hub-1] Received DOWNLOAD_RESPONSE from hub-1
+2021/01/16 23:38:36 [hub-1] Sending DOWNLOAD_REQUEST to node-3
+2021/01/16 23:38:36 [hub-1] Received DOWNLOAD_RESPONSE from hub-1
+2021/01/16 23:38:36 [hub-1] Sending DOWNLOAD_REQUEST to ref-3
+2021/01/16 23:38:36 [hub-1] Received DOWNLOAD_RESPONSE from hub-1
+2021/01/16 23:38:36 [hub-1] Sending DOWNLOAD_REQUEST to node-3
+2021/01/16 23:38:36 [hub-1] Received DOWNLOAD_RESPONSE from hub-1
+2021/01/16 23:38:36 [hub-1] Sending DOWNLOAD_REQUEST to ref-3
+2021/01/16 23:38:36 [hub-1] Received DOWNLOAD_RESPONSE from hub-1
+2021/01/16 23:38:36 [hub-1] ============================================================
+2021/01/16 23:38:36 [hub-1] Testing ClientDownloadMissing ...
+2021/01/16 23:38:36 [hub-1] Sending DOWNLOAD_REQUEST to node-1
+2021/01/16 23:38:36 [hub-1] Received DOWNLOAD_RESPONSE from hub-1
+2021/01/16 23:38:36 [hub-1] Sending DOWNLOAD_REQUEST to ref-1
+2021/01/16 23:38:36 [hub-1] Received DOWNLOAD_RESPONSE from hub-1
+2021/01/16 23:38:36 [hub-1] Sending DOWNLOAD_REQUEST to node-2
+2021/01/16 23:38:36 [hub-1] Received DOWNLOAD_RESPONSE from hub-1
+2021/01/16 23:38:36 [hub-1] Sending DOWNLOAD_REQUEST to ref-2
+2021/01/16 23:38:36 [hub-1] Received DOWNLOAD_RESPONSE from hub-1
+2021/01/16 23:38:36 [hub-1] Sending DOWNLOAD_REQUEST to node-3
+2021/01/16 23:38:36 [hub-1] Received DOWNLOAD_RESPONSE from hub-1
+2021/01/16 23:38:36 [hub-1] Sending DOWNLOAD_REQUEST to ref-3
+2021/01/16 23:38:36 [hub-1] Received DOWNLOAD_RESPONSE from hub-1
+2021/01/16 23:38:36 [hub-1] ============================================================
+2021/01/16 23:38:36 [hub-1] Node execution statistics
+2021/01/16 23:38:36 [hub-1]     node-1 18 errors
+2021/01/16 23:38:36 [hub-1]     node-2 18 errors
+2021/01/16 23:38:36 [hub-1]     node-3 18 errors
+2021/01/16 23:38:36 [hub-1]     ref-1 0 errors. CONGRATULATIONS!
+2021/01/16 23:38:36 [hub-1]     ref-2 0 errors. CONGRATULATIONS!
+2021/01/16 23:38:36 [hub-1]     ref-3 0 errors. CONGRATULATIONS!
+2021/01/16 23:40:14 ========================================================================================================================
+2021/01/16 23:40:14 [ref-1] Registering ...
+2021/01/16 23:40:14 [hub-1] Listening on 127.0.0.1:5000
+2021/01/16 23:40:14 [ref-1] Sending REGISTRATION_REQUEST to hub-1
+2021/01/16 23:40:14 [ref-2] Registering ...
+2021/01/16 23:40:14 [ref-2] Sending REGISTRATION_REQUEST to hub-1
+2021/01/16 23:40:14 [ref-3] Registering ...
+2021/01/16 23:40:14 [ref-3] Sending REGISTRATION_REQUEST to hub-1
+2021/01/16 23:40:14 [ref-2] Received REGISTRATION_RESPONSE from ref-2
+2021/01/16 23:40:14 [ref-2] Listening on 127.0.0.1:5002
+2021/01/16 23:40:14 [ref-3] Received REGISTRATION_RESPONSE from ref-3
+2021/01/16 23:40:14 [ref-3] Listening on 127.0.0.1:5003
+2021/01/16 23:40:14 [ref-1] Received REGISTRATION_RESPONSE from ref-1
+2021/01/16 23:40:14 [ref-1] Listening on 127.0.0.1:5001
+2021/01/16 23:40:21 [hub-1] Sending UPLOAD_REQUEST to node-1
+2021/01/16 23:40:21 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:40:21 [hub-1] Sending UPLOAD_REQUEST to node-2
+2021/01/16 23:40:21 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:40:21 [hub-1] Sending UPLOAD_REQUEST to node-3
+2021/01/16 23:40:21 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:40:21 [hub-1] Sending UPLOAD_REQUEST to ref-1
+2021/01/16 23:40:21 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:40:21 [hub-1] Sending UPLOAD_REQUEST to ref-2
+2021/01/16 23:40:21 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:40:21 [hub-1] Sending UPLOAD_REQUEST to ref-3
+2021/01/16 23:40:21 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:40:21 [hub-1] Active nodes: node-1 node-2 node-3 ref-1 ref-2 ref-3
+2021/01/16 23:40:21 [hub-1] Group A: node-1 ref-1
+2021/01/16 23:40:21 [hub-1] Group B: node-2 ref-2
+2021/01/16 23:40:21 [hub-1] Group C: node-3 ref-3
+2021/01/16 23:40:21 [hub-1] ============================================================
+2021/01/16 23:40:21 [hub-1] Testing ClientUpload ...
+2021/01/16 23:40:21 [hub-1] Sending UPLOAD_REQUEST to node-1
+2021/01/16 23:40:21 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:40:21 [hub-1] Sending UPLOAD_REQUEST to ref-1
+2021/01/16 23:40:21 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:40:21 [hub-1] Sending UPLOAD_REQUEST to node-2
+2021/01/16 23:40:21 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:40:21 [hub-1] Sending UPLOAD_REQUEST to ref-2
+2021/01/16 23:40:21 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:40:21 [hub-1] Sending UPLOAD_REQUEST to node-3
+2021/01/16 23:40:21 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:40:21 [hub-1] Sending UPLOAD_REQUEST to ref-3
+2021/01/16 23:40:21 [hub-1] Received UPLOAD_RESPONSE from hub-1
+2021/01/16 23:40:21 [hub-1] ============================================================
+2021/01/16 23:40:21 [hub-1] Testing ClientReplicate ...
+2021/01/16 23:40:21 [hub-1] Sending REPLICATE_REQUEST to node-1
+2021/01/16 23:40:21 [hub-1] Received REPLICATE_RESPONSE from hub-1
+2021/01/16 23:40:21 [hub-1] Sending REPLICATE_REQUEST to ref-1
+2021/01/16 23:40:21 [ref-1] Sending SUBNET_REQUEST to hub-1
+2021/01/16 23:40:21 [ref-1] Received SUBNET_RESPONSE from ref-1
+2021/01/16 23:40:21 [ref-1] Sending CHUNK_REQUEST to node-1
+2021/01/16 23:40:21 [ref-1] Sending CHUNK_REQUEST to node-3
+2021/01/16 23:40:21 [ref-1] Sending CHUNK_REQUEST to node-2
+2021/01/16 23:40:21 [ref-1] Sending CHUNK_REQUEST to ref-2
+2021/01/16 23:40:21 [ref-1] Sending CHUNK_REQUEST to node-2
+2021/01/16 23:40:21 [ref-1] Sending CHUNK_REQUEST to node-3
+2021/01/16 23:40:21 [ref-1] Sending CHUNK_REQUEST to node-2
+2021/01/16 23:40:21 [ref-1] Sending CHUNK_REQUEST to ref-2
+2021/01/16 23:40:21 [ref-1] Sending CHUNK_REQUEST to node-2
+2021/01/16 23:40:21 [ref-1] Sending CHUNK_REQUEST to ref-3
+2021/01/16 23:40:21 [ref-1] Sending CHUNK_REQUEST to node-1
+2021/01/16 23:40:21 [ref-1] Sending CHUNK_REQUEST to ref-2
+2021/01/16 23:40:21 [ref-1] Sending CHUNK_REQUEST to node-3
+2021/01/16 23:40:21 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:40:21 [ref-1] Sending CHUNK_REQUEST to ref-3
+2021/01/16 23:40:21 [ref-1] Sending CHUNK_REQUEST to node-1
+2021/01/16 23:40:21 [ref-1] Sending CHUNK_REQUEST to ref-2
+2021/01/16 23:40:21 [ref-1] Sending CHUNK_REQUEST to ref-2
+2021/01/16 23:40:21 [ref-1] Sending CHUNK_REQUEST to ref-2
+2021/01/16 23:40:21 [ref-1] Sending CHUNK_REQUEST to node-1
+2021/01/16 23:40:21 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:40:21 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:40:21 [ref-1] Sending CHUNK_REQUEST to ref-2
+2021/01/16 23:40:21 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:40:21 [ref-1] Sending CHUNK_REQUEST to ref-2
+2021/01/16 23:40:21 [ref-1] Sending CHUNK_REQUEST to ref-3
+2021/01/16 23:40:21 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:40:21 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:40:21 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:40:21 [ref-1] Sending CHUNK_REQUEST to ref-2
+2021/01/16 23:40:21 [ref-1] Sending CHUNK_REQUEST to node-2
+2021/01/16 23:40:21 [ref-1] Sending CHUNK_REQUEST to node-1
+2021/01/16 23:40:21 [ref-1] Sending CHUNK_REQUEST to node-3
+2021/01/16 23:40:21 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:40:21 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:40:21 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:40:21 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:40:21 [ref-1] Sending CHUNK_REQUEST to node-1
+2021/01/16 23:40:21 [ref-1] Sending CHUNK_REQUEST to ref-2
+2021/01/16 23:40:21 [ref-1] Sending CHUNK_REQUEST to ref-2
+2021/01/16 23:40:21 [ref-1] Sending CHUNK_REQUEST to ref-3
+2021/01/16 23:40:21 [ref-1] Sending CHUNK_REQUEST to node-1
+2021/01/16 23:40:21 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:40:21 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:40:21 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:40:21 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:40:21 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:40:21 [ref-1] Sending CHUNK_REQUEST to node-1
+2021/01/16 23:40:21 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:40:21 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:40:21 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:40:21 [ref-1] Sending CHUNK_REQUEST to ref-2
+2021/01/16 23:40:21 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:40:21 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:40:21 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:40:21 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:40:21 [ref-1] Sending CHUNK_REQUEST to node-1
+2021/01/16 23:40:21 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:40:21 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:40:21 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:40:21 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:40:21 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:40:21 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:40:21 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:40:21 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:40:21 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:40:21 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:40:21 [ref-1] Received CHUNK_RESPONSE from ref-1
+2021/01/16 23:40:21 [hub-1] Received REPLICATE_RESPONSE from hub-1
+2021/01/16 23:40:21 [hub-1] Sending REPLICATE_REQUEST to node-2
+2021/01/16 23:40:21 [hub-1] Received REPLICATE_RESPONSE from hub-1
+2021/01/16 23:40:21 [hub-1] Sending REPLICATE_REQUEST to ref-2
+2021/01/16 23:40:21 [ref-2] Sending SUBNET_REQUEST to hub-1
+2021/01/16 23:40:21 [ref-2] Received SUBNET_RESPONSE from ref-2
+2021/01/16 23:40:21 [ref-2] Sending CHUNK_REQUEST to ref-3
+2021/01/16 23:40:21 [ref-2] Sending CHUNK_REQUEST to node-1
+2021/01/16 23:40:21 [ref-2] Sending CHUNK_REQUEST to ref-3
+2021/01/16 23:40:21 [ref-2] Sending CHUNK_REQUEST to node-3
+2021/01/16 23:40:21 [ref-2] Sending CHUNK_REQUEST to ref-1
+2021/01/16 23:40:21 [ref-2] Sending CHUNK_REQUEST to node-1
+2021/01/16 23:40:21 [ref-2] Sending CHUNK_REQUEST to ref-1
+2021/01/16 23:40:21 [ref-2] Sending CHUNK_REQUEST to ref-3
+2021/01/16 23:40:21 [ref-2] Sending CHUNK_REQUEST to ref-3
+2021/01/16 23:40:21 [ref-2] Sending CHUNK_REQUEST to node-2
+2021/01/16 23:40:21 [ref-2] Sending CHUNK_REQUEST to ref-3
+2021/01/16 23:40:21 [ref-2] Sending CHUNK_REQUEST to node-1
+2021/01/16 23:40:21 [ref-2] Sending CHUNK_REQUEST to node-2
+2021/01/16 23:40:21 [ref-2] Sending CHUNK_REQUEST to node-3
+2021/01/16 23:40:21 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:40:21 [ref-2] Sending CHUNK_REQUEST to ref-1
+2021/01/16 23:40:21 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:40:21 [ref-2] Sending CHUNK_REQUEST to ref-3
+2021/01/16 23:40:21 [ref-2] Sending CHUNK_REQUEST to ref-3
+2021/01/16 23:40:21 [ref-2] Sending CHUNK_REQUEST to node-1
+2021/01/16 23:40:21 [ref-2] Sending CHUNK_REQUEST to node-3
+2021/01/16 23:40:21 [ref-2] Sending CHUNK_REQUEST to node-2
+2021/01/16 23:40:21 [ref-2] Sending CHUNK_REQUEST to ref-3
+2021/01/16 23:40:21 [ref-2] Sending CHUNK_REQUEST to ref-1
+2021/01/16 23:40:21 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:40:21 [ref-2] Sending CHUNK_REQUEST to node-2
+2021/01/16 23:40:21 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:40:21 [ref-2] Sending CHUNK_REQUEST to node-3
+2021/01/16 23:40:21 [ref-2] Sending CHUNK_REQUEST to node-2
+2021/01/16 23:40:21 [ref-2] Sending CHUNK_REQUEST to ref-3
+2021/01/16 23:40:21 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:40:21 [ref-2] Sending CHUNK_REQUEST to ref-3
+2021/01/16 23:40:21 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:40:21 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:40:21 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:40:21 [ref-2] Sending CHUNK_REQUEST to node-2
+2021/01/16 23:40:21 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:40:21 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:40:21 [ref-2] Sending CHUNK_REQUEST to ref-3
+2021/01/16 23:40:21 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:40:21 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:40:21 [ref-2] Sending CHUNK_REQUEST to ref-3
+2021/01/16 23:40:21 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:40:21 [ref-2] Sending CHUNK_REQUEST to node-2
+2021/01/16 23:40:21 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:40:21 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:40:21 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:40:21 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:40:21 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:40:21 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:40:21 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:40:21 [ref-2] Sending CHUNK_REQUEST to node-2
+2021/01/16 23:40:21 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:40:21 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:40:21 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:40:21 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:40:21 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:40:21 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:40:21 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:40:21 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:40:21 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:40:21 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:40:21 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:40:21 [ref-2] Received CHUNK_RESPONSE from ref-2
+2021/01/16 23:40:21 [hub-1] Received REPLICATE_RESPONSE from hub-1
+2021/01/16 23:40:21 [hub-1] Sending REPLICATE_REQUEST to node-3
+2021/01/16 23:40:21 [hub-1] Received REPLICATE_RESPONSE from hub-1
+2021/01/16 23:40:21 [hub-1] Sending REPLICATE_REQUEST to ref-3
+2021/01/16 23:40:21 [ref-3] Sending SUBNET_REQUEST to hub-1
+2021/01/16 23:40:21 [ref-3] Received SUBNET_RESPONSE from ref-3
+2021/01/16 23:40:21 [ref-3] Sending CHUNK_REQUEST to node-2
+2021/01/16 23:40:21 [ref-3] Sending CHUNK_REQUEST to node-3
+2021/01/16 23:40:21 [ref-3] Sending CHUNK_REQUEST to ref-1
+2021/01/16 23:40:21 [ref-3] Sending CHUNK_REQUEST to node-1
+2021/01/16 23:40:21 [ref-3] Sending CHUNK_REQUEST to node-1
+2021/01/16 23:40:21 [ref-3] Sending CHUNK_REQUEST to node-1
+2021/01/16 23:40:21 [ref-3] Sending CHUNK_REQUEST to node-2
+2021/01/16 23:40:21 [ref-3] Sending CHUNK_REQUEST to ref-1
+2021/01/16 23:40:21 [ref-3] Sending CHUNK_REQUEST to ref-2
+2021/01/16 23:40:21 [ref-3] Sending CHUNK_REQUEST to node-1
+2021/01/16 23:40:21 [ref-3] Sending CHUNK_REQUEST to node-3
+2021/01/16 23:40:21 [ref-3] Sending CHUNK_REQUEST to node-1
+2021/01/16 23:40:21 [ref-3] Sending CHUNK_REQUEST to node-1
+2021/01/16 23:40:21 [ref-3] Sending CHUNK_REQUEST to node-2
+2021/01/16 23:40:21 [ref-3] Sending CHUNK_REQUEST to ref-1
+2021/01/16 23:40:21 [ref-3] Sending CHUNK_REQUEST to node-3
+2021/01/16 23:40:21 [ref-3] Sending CHUNK_REQUEST to ref-2
+2021/01/16 23:40:21 [ref-3] Sending CHUNK_REQUEST to ref-2
+2021/01/16 23:40:21 [ref-3] Sending CHUNK_REQUEST to node-2
+2021/01/16 23:40:21 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:40:21 [ref-3] Sending CHUNK_REQUEST to node-1
+2021/01/16 23:40:21 [ref-3] Sending CHUNK_REQUEST to ref-1
+2021/01/16 23:40:21 [ref-3] Sending CHUNK_REQUEST to node-3
+2021/01/16 23:40:21 [ref-3] Sending CHUNK_REQUEST to node-1
+2021/01/16 23:40:21 [ref-3] Sending CHUNK_REQUEST to ref-2
+2021/01/16 23:40:21 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:40:21 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:40:21 [ref-3] Sending CHUNK_REQUEST to node-3
+2021/01/16 23:40:21 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:40:21 [ref-3] Sending CHUNK_REQUEST to node-1
+2021/01/16 23:40:21 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:40:21 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:40:21 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:40:21 [ref-3] Sending CHUNK_REQUEST to node-1
+2021/01/16 23:40:21 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:40:21 [ref-3] Sending CHUNK_REQUEST to node-1
+2021/01/16 23:40:21 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:40:21 [ref-3] Sending CHUNK_REQUEST to node-1
+2021/01/16 23:40:21 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:40:21 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:40:21 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:40:21 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:40:21 [ref-3] Sending CHUNK_REQUEST to node-3
+2021/01/16 23:40:21 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:40:21 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:40:21 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:40:21 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:40:21 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:40:21 [ref-3] Sending CHUNK_REQUEST to node-3
+2021/01/16 23:40:21 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:40:21 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:40:21 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:40:21 [ref-3] Sending CHUNK_REQUEST to node-3
+2021/01/16 23:40:21 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:40:21 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:40:21 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:40:21 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:40:21 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:40:21 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:40:21 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:40:21 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:40:21 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:40:21 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:40:21 [ref-3] Received CHUNK_RESPONSE from ref-3
+2021/01/16 23:40:21 [hub-1] Received REPLICATE_RESPONSE from hub-1
+2021/01/16 23:40:21 [hub-1] ============================================================
+2021/01/16 23:40:21 [hub-1] Testing ClientLocalSearchWithResults ...
+2021/01/16 23:40:21 [hub-1] Sending LOCAL_SEARCH_REQUEST to node-1
+2021/01/16 23:40:21 [hub-1] Received LOCAL_SEARCH_RESPONSE from hub-1
+2021/01/16 23:40:21 [hub-1] Sending LOCAL_SEARCH_REQUEST to ref-1
+2021/01/16 23:40:21 [hub-1] Received LOCAL_SEARCH_RESPONSE from hub-1
+2021/01/16 23:40:21 [hub-1] Sending LOCAL_SEARCH_REQUEST to node-1
+2021/01/16 23:40:21 [hub-1] Received LOCAL_SEARCH_RESPONSE from hub-1
+2021/01/16 23:40:21 [hub-1] Sending LOCAL_SEARCH_REQUEST to ref-1
+2021/01/16 23:40:21 [hub-1] Received LOCAL_SEARCH_RESPONSE from hub-1
+2021/01/16 23:40:21 [hub-1] Sending LOCAL_SEARCH_REQUEST to node-2
+2021/01/16 23:40:21 [hub-1] Received LOCAL_SEARCH_RESPONSE from hub-1
+2021/01/16 23:40:21 [hub-1] Sending LOCAL_SEARCH_REQUEST to ref-2
+2021/01/16 23:40:21 [hub-1] Received LOCAL_SEARCH_RESPONSE from hub-1
+2021/01/16 23:40:21 [hub-1] Sending LOCAL_SEARCH_REQUEST to node-2
+2021/01/16 23:40:21 [hub-1] Received LOCAL_SEARCH_RESPONSE from hub-1
+2021/01/16 23:40:21 [hub-1] Sending LOCAL_SEARCH_REQUEST to ref-2
+2021/01/16 23:40:21 [hub-1] Received LOCAL_SEARCH_RESPONSE from hub-1
+2021/01/16 23:40:21 [hub-1] Sending LOCAL_SEARCH_REQUEST to node-3
+2021/01/16 23:40:21 [hub-1] Received LOCAL_SEARCH_RESPONSE from hub-1
+2021/01/16 23:40:21 [hub-1] Sending LOCAL_SEARCH_REQUEST to ref-3
+2021/01/16 23:40:21 [hub-1] Received LOCAL_SEARCH_RESPONSE from hub-1
+2021/01/16 23:40:21 [hub-1] Sending LOCAL_SEARCH_REQUEST to node-3
+2021/01/16 23:40:21 [hub-1] Received LOCAL_SEARCH_RESPONSE from hub-1
+2021/01/16 23:40:21 [hub-1] Sending LOCAL_SEARCH_REQUEST to ref-3
+2021/01/16 23:40:21 [hub-1] Received LOCAL_SEARCH_RESPONSE from hub-1
+2021/01/16 23:40:21 [hub-1] ============================================================
+2021/01/16 23:40:21 [hub-1] Testing ClientLocalSearchNoResults ...
+2021/01/16 23:40:21 [hub-1] Sending LOCAL_SEARCH_REQUEST to node-1
+2021/01/16 23:40:21 [hub-1] Received LOCAL_SEARCH_RESPONSE from hub-1
+2021/01/16 23:40:21 [hub-1] Sending LOCAL_SEARCH_REQUEST to ref-1
+2021/01/16 23:40:21 [hub-1] Received LOCAL_SEARCH_RESPONSE from hub-1
+2021/01/16 23:40:21 [hub-1] Sending LOCAL_SEARCH_REQUEST to node-2
+2021/01/16 23:40:21 [hub-1] Received LOCAL_SEARCH_RESPONSE from hub-1
+2021/01/16 23:40:21 [hub-1] Sending LOCAL_SEARCH_REQUEST to ref-2
+2021/01/16 23:40:21 [hub-1] Received LOCAL_SEARCH_RESPONSE from hub-1
+2021/01/16 23:40:21 [hub-1] Sending LOCAL_SEARCH_REQUEST to node-3
+2021/01/16 23:40:21 [hub-1] Received LOCAL_SEARCH_RESPONSE from hub-1
+2021/01/16 23:40:21 [hub-1] Sending LOCAL_SEARCH_REQUEST to ref-3
+2021/01/16 23:40:21 [hub-1] Received LOCAL_SEARCH_RESPONSE from hub-1
+2021/01/16 23:40:21 [hub-1] ============================================================
+2021/01/16 23:40:21 [hub-1] Testing ClientSearch ...
+2021/01/16 23:40:21 [hub-1] Sending SEARCH_REQUEST to node-1
+2021/01/16 23:40:21 [hub-1] Received SEARCH_RESPONSE from hub-1
+2021/01/16 23:40:21 [hub-1] Sending SEARCH_REQUEST to ref-1
+2021/01/16 23:40:21 [ref-1] Sending SUBNET_REQUEST to hub-1
+2021/01/16 23:40:21 [ref-1] Received SUBNET_RESPONSE from ref-1
+2021/01/16 23:40:21 [ref-1] Sending LOCAL_SEARCH_REQUEST to ref-3
+2021/01/16 23:40:21 [ref-1] Sending LOCAL_SEARCH_REQUEST to node-1
+2021/01/16 23:40:21 [ref-1] Sending LOCAL_SEARCH_REQUEST to ref-2
+2021/01/16 23:40:21 [ref-1] Sending LOCAL_SEARCH_REQUEST to node-2
+2021/01/16 23:40:21 [ref-1] Sending LOCAL_SEARCH_REQUEST to node-3
+2021/01/16 23:40:21 [ref-1] Received LOCAL_SEARCH_RESPONSE from ref-1
+2021/01/16 23:40:21 [ref-1] Received LOCAL_SEARCH_RESPONSE from ref-1
+2021/01/16 23:40:21 [ref-1] Received LOCAL_SEARCH_RESPONSE from ref-1
+2021/01/16 23:40:21 [ref-1] Received LOCAL_SEARCH_RESPONSE from ref-1
+2021/01/16 23:40:21 [ref-1] Received LOCAL_SEARCH_RESPONSE from ref-1
+2021/01/16 23:40:21 [hub-1] Received SEARCH_RESPONSE from hub-1
+2021/01/16 23:40:21 [hub-1] Sending SEARCH_REQUEST to node-1
+2021/01/16 23:40:21 [hub-1] Received SEARCH_RESPONSE from hub-1
+2021/01/16 23:40:21 [hub-1] Sending SEARCH_REQUEST to ref-1
+2021/01/16 23:40:21 [ref-1] Sending SUBNET_REQUEST to hub-1
+2021/01/16 23:40:21 [ref-1] Received SUBNET_RESPONSE from ref-1
+2021/01/16 23:40:21 [ref-1] Sending LOCAL_SEARCH_REQUEST to ref-3
+2021/01/16 23:40:21 [ref-1] Sending LOCAL_SEARCH_REQUEST to node-2
+2021/01/16 23:40:21 [ref-1] Sending LOCAL_SEARCH_REQUEST to node-3
+2021/01/16 23:40:21 [ref-1] Sending LOCAL_SEARCH_REQUEST to ref-2
+2021/01/16 23:40:21 [ref-1] Sending LOCAL_SEARCH_REQUEST to node-1
+2021/01/16 23:40:21 [ref-1] Received LOCAL_SEARCH_RESPONSE from ref-1
+2021/01/16 23:40:21 [ref-1] Received LOCAL_SEARCH_RESPONSE from ref-1
+2021/01/16 23:40:21 [ref-1] Received LOCAL_SEARCH_RESPONSE from ref-1
+2021/01/16 23:40:21 [ref-1] Received LOCAL_SEARCH_RESPONSE from ref-1
+2021/01/16 23:40:21 [ref-1] Received LOCAL_SEARCH_RESPONSE from ref-1
+2021/01/16 23:40:21 [hub-1] Received SEARCH_RESPONSE from hub-1
+2021/01/16 23:40:21 [hub-1] Sending SEARCH_REQUEST to node-1
+2021/01/16 23:40:21 [hub-1] Received SEARCH_RESPONSE from hub-1
+2021/01/16 23:40:21 [hub-1] Sending SEARCH_REQUEST to ref-1
+2021/01/16 23:40:21 [ref-1] Sending SUBNET_REQUEST to hub-1
+2021/01/16 23:40:21 [ref-1] Received SUBNET_RESPONSE from ref-1
+2021/01/16 23:40:21 [ref-1] Sending LOCAL_SEARCH_REQUEST to node-2
+2021/01/16 23:40:21 [ref-1] Sending LOCAL_SEARCH_REQUEST to ref-2
+2021/01/16 23:40:21 [ref-1] Sending LOCAL_SEARCH_REQUEST to node-1
+2021/01/16 23:40:21 [ref-1] Sending LOCAL_SEARCH_REQUEST to ref-3
+2021/01/16 23:40:21 [ref-1] Sending LOCAL_SEARCH_REQUEST to node-3
+2021/01/16 23:40:21 [ref-1] Received LOCAL_SEARCH_RESPONSE from ref-1
+2021/01/16 23:40:21 [ref-1] Received LOCAL_SEARCH_RESPONSE from ref-1
+2021/01/16 23:40:21 [ref-1] Received LOCAL_SEARCH_RESPONSE from ref-1
+2021/01/16 23:40:21 [ref-1] Received LOCAL_SEARCH_RESPONSE from ref-1
+2021/01/16 23:40:21 [ref-1] Received LOCAL_SEARCH_RESPONSE from ref-1
+2021/01/16 23:40:21 [hub-1] Received SEARCH_RESPONSE from hub-1
+2021/01/16 23:40:21 [hub-1] Sending SEARCH_REQUEST to node-2
+2021/01/16 23:40:21 [hub-1] Received SEARCH_RESPONSE from hub-1
+2021/01/16 23:40:21 [hub-1] Sending SEARCH_REQUEST to ref-2
+2021/01/16 23:40:21 [ref-2] Sending SUBNET_REQUEST to hub-1
+2021/01/16 23:40:21 [ref-2] Received SUBNET_RESPONSE from ref-2
+2021/01/16 23:40:21 [ref-2] Sending LOCAL_SEARCH_REQUEST to ref-3
+2021/01/16 23:40:21 [ref-2] Sending LOCAL_SEARCH_REQUEST to node-2
+2021/01/16 23:40:21 [ref-2] Sending LOCAL_SEARCH_REQUEST to node-1
+2021/01/16 23:40:21 [ref-2] Sending LOCAL_SEARCH_REQUEST to ref-1
+2021/01/16 23:40:21 [ref-2] Sending LOCAL_SEARCH_REQUEST to node-3
+2021/01/16 23:40:21 [ref-2] Received LOCAL_SEARCH_RESPONSE from ref-2
+2021/01/16 23:40:21 [ref-2] Received LOCAL_SEARCH_RESPONSE from ref-2
+2021/01/16 23:40:21 [ref-2] Received LOCAL_SEARCH_RESPONSE from ref-2
+2021/01/16 23:40:21 [ref-2] Received LOCAL_SEARCH_RESPONSE from ref-2
+2021/01/16 23:40:21 [ref-2] Received LOCAL_SEARCH_RESPONSE from ref-2
+2021/01/16 23:40:21 [hub-1] Received SEARCH_RESPONSE from hub-1
+2021/01/16 23:40:21 [hub-1] Sending SEARCH_REQUEST to node-2
+2021/01/16 23:40:21 [hub-1] Received SEARCH_RESPONSE from hub-1
+2021/01/16 23:40:21 [hub-1] Sending SEARCH_REQUEST to ref-2
+2021/01/16 23:40:21 [ref-2] Sending SUBNET_REQUEST to hub-1
+2021/01/16 23:40:21 [ref-2] Received SUBNET_RESPONSE from ref-2
+2021/01/16 23:40:21 [ref-2] Sending LOCAL_SEARCH_REQUEST to ref-3
+2021/01/16 23:40:21 [ref-2] Sending LOCAL_SEARCH_REQUEST to node-2
+2021/01/16 23:40:21 [ref-2] Sending LOCAL_SEARCH_REQUEST to node-1
+2021/01/16 23:40:21 [ref-2] Sending LOCAL_SEARCH_REQUEST to node-3
+2021/01/16 23:40:21 [ref-2] Sending LOCAL_SEARCH_REQUEST to ref-1
+2021/01/16 23:40:21 [ref-2] Received LOCAL_SEARCH_RESPONSE from ref-2
+2021/01/16 23:40:21 [ref-2] Received LOCAL_SEARCH_RESPONSE from ref-2
+2021/01/16 23:40:21 [ref-2] Received LOCAL_SEARCH_RESPONSE from ref-2
+2021/01/16 23:40:21 [ref-2] Received LOCAL_SEARCH_RESPONSE from ref-2
+2021/01/16 23:40:21 [ref-2] Received LOCAL_SEARCH_RESPONSE from ref-2
+2021/01/16 23:40:21 [hub-1] Received SEARCH_RESPONSE from hub-1
+2021/01/16 23:40:21 [hub-1] Sending SEARCH_REQUEST to node-2
+2021/01/16 23:40:21 [hub-1] Received SEARCH_RESPONSE from hub-1
+2021/01/16 23:40:21 [hub-1] Sending SEARCH_REQUEST to ref-2
+2021/01/16 23:40:21 [ref-2] Sending SUBNET_REQUEST to hub-1
+2021/01/16 23:40:21 [ref-2] Received SUBNET_RESPONSE from ref-2
+2021/01/16 23:40:21 [ref-2] Sending LOCAL_SEARCH_REQUEST to ref-3
+2021/01/16 23:40:21 [ref-2] Sending LOCAL_SEARCH_REQUEST to node-1
+2021/01/16 23:40:21 [ref-2] Sending LOCAL_SEARCH_REQUEST to node-3
+2021/01/16 23:40:21 [ref-2] Sending LOCAL_SEARCH_REQUEST to ref-1
+2021/01/16 23:40:21 [ref-2] Sending LOCAL_SEARCH_REQUEST to node-2
+2021/01/16 23:40:21 [ref-2] Received LOCAL_SEARCH_RESPONSE from ref-2
+2021/01/16 23:40:21 [ref-2] Received LOCAL_SEARCH_RESPONSE from ref-2
+2021/01/16 23:40:21 [ref-2] Received LOCAL_SEARCH_RESPONSE from ref-2
+2021/01/16 23:40:21 [ref-2] Received LOCAL_SEARCH_RESPONSE from ref-2
+2021/01/16 23:40:21 [ref-2] Received LOCAL_SEARCH_RESPONSE from ref-2
+2021/01/16 23:40:21 [hub-1] Received SEARCH_RESPONSE from hub-1
+2021/01/16 23:40:21 [hub-1] Sending SEARCH_REQUEST to node-3
+2021/01/16 23:40:21 [hub-1] Received SEARCH_RESPONSE from hub-1
+2021/01/16 23:40:21 [hub-1] Sending SEARCH_REQUEST to ref-3
+2021/01/16 23:40:21 [ref-3] Sending SUBNET_REQUEST to hub-1
+2021/01/16 23:40:21 [ref-3] Received SUBNET_RESPONSE from ref-3
+2021/01/16 23:40:21 [ref-3] Sending LOCAL_SEARCH_REQUEST to ref-2
+2021/01/16 23:40:21 [ref-3] Sending LOCAL_SEARCH_REQUEST to node-1
+2021/01/16 23:40:21 [ref-3] Sending LOCAL_SEARCH_REQUEST to node-3
+2021/01/16 23:40:21 [ref-3] Sending LOCAL_SEARCH_REQUEST to ref-1
+2021/01/16 23:40:21 [ref-3] Sending LOCAL_SEARCH_REQUEST to node-2
+2021/01/16 23:40:21 [ref-3] Received LOCAL_SEARCH_RESPONSE from ref-3
+2021/01/16 23:40:21 [ref-3] Received LOCAL_SEARCH_RESPONSE from ref-3
+2021/01/16 23:40:21 [ref-3] Received LOCAL_SEARCH_RESPONSE from ref-3
+2021/01/16 23:40:21 [ref-3] Received LOCAL_SEARCH_RESPONSE from ref-3
+2021/01/16 23:40:21 [ref-3] Received LOCAL_SEARCH_RESPONSE from ref-3
+2021/01/16 23:40:21 [hub-1] Received SEARCH_RESPONSE from hub-1
+2021/01/16 23:40:21 [hub-1] Sending SEARCH_REQUEST to node-3
+2021/01/16 23:40:21 [hub-1] Received SEARCH_RESPONSE from hub-1
+2021/01/16 23:40:21 [hub-1] Sending SEARCH_REQUEST to ref-3
+2021/01/16 23:40:21 [ref-3] Sending SUBNET_REQUEST to hub-1
+2021/01/16 23:40:21 [ref-3] Received SUBNET_RESPONSE from ref-3
+2021/01/16 23:40:21 [ref-3] Sending LOCAL_SEARCH_REQUEST to ref-2
+2021/01/16 23:40:21 [ref-3] Sending LOCAL_SEARCH_REQUEST to node-1
+2021/01/16 23:40:21 [ref-3] Sending LOCAL_SEARCH_REQUEST to node-3
+2021/01/16 23:40:21 [ref-3] Sending LOCAL_SEARCH_REQUEST to ref-1
+2021/01/16 23:40:21 [ref-3] Sending LOCAL_SEARCH_REQUEST to node-2
+2021/01/16 23:40:21 [ref-3] Received LOCAL_SEARCH_RESPONSE from ref-3
+2021/01/16 23:40:21 [ref-3] Received LOCAL_SEARCH_RESPONSE from ref-3
+2021/01/16 23:40:21 [ref-3] Received LOCAL_SEARCH_RESPONSE from ref-3
+2021/01/16 23:40:21 [ref-3] Received LOCAL_SEARCH_RESPONSE from ref-3
+2021/01/16 23:40:21 [ref-3] Received LOCAL_SEARCH_RESPONSE from ref-3
+2021/01/16 23:40:21 [hub-1] Received SEARCH_RESPONSE from hub-1
+2021/01/16 23:40:21 [hub-1] Sending SEARCH_REQUEST to node-3
+2021/01/16 23:40:21 [hub-1] Received SEARCH_RESPONSE from hub-1
+2021/01/16 23:40:21 [hub-1] Sending SEARCH_REQUEST to ref-3
+2021/01/16 23:40:21 [ref-3] Sending SUBNET_REQUEST to hub-1
+2021/01/16 23:40:21 [ref-3] Received SUBNET_RESPONSE from ref-3
+2021/01/16 23:40:21 [ref-3] Sending LOCAL_SEARCH_REQUEST to ref-2
+2021/01/16 23:40:21 [ref-3] Sending LOCAL_SEARCH_REQUEST to node-1
+2021/01/16 23:40:21 [ref-3] Sending LOCAL_SEARCH_REQUEST to node-3
+2021/01/16 23:40:21 [ref-3] Sending LOCAL_SEARCH_REQUEST to ref-1
+2021/01/16 23:40:21 [ref-3] Sending LOCAL_SEARCH_REQUEST to node-2
+2021/01/16 23:40:21 [ref-3] Received LOCAL_SEARCH_RESPONSE from ref-3
+2021/01/16 23:40:21 [ref-3] Received LOCAL_SEARCH_RESPONSE from ref-3
+2021/01/16 23:40:21 [ref-3] Received LOCAL_SEARCH_RESPONSE from ref-3
+2021/01/16 23:40:21 [ref-3] Received LOCAL_SEARCH_RESPONSE from ref-3
+2021/01/16 23:40:21 [ref-3] Received LOCAL_SEARCH_RESPONSE from ref-3
+2021/01/16 23:40:21 [hub-1] Received SEARCH_RESPONSE from hub-1
+2021/01/16 23:40:21 [hub-1] ============================================================
+2021/01/16 23:40:21 [hub-1] Testing ClientDownloadExisting ...
+2021/01/16 23:40:21 [hub-1] Sending DOWNLOAD_REQUEST to node-1
+2021/01/16 23:40:21 [hub-1] Received DOWNLOAD_RESPONSE from hub-1
+2021/01/16 23:40:21 [hub-1] Sending DOWNLOAD_REQUEST to ref-1
+2021/01/16 23:40:21 [hub-1] Received DOWNLOAD_RESPONSE from hub-1
+2021/01/16 23:40:21 [hub-1] Sending DOWNLOAD_REQUEST to node-1
+2021/01/16 23:40:21 [hub-1] Received DOWNLOAD_RESPONSE from hub-1
+2021/01/16 23:40:21 [hub-1] Sending DOWNLOAD_REQUEST to ref-1
+2021/01/16 23:40:21 [hub-1] Received DOWNLOAD_RESPONSE from hub-1
+2021/01/16 23:40:21 [hub-1] Sending DOWNLOAD_REQUEST to node-2
+2021/01/16 23:40:21 [hub-1] Received DOWNLOAD_RESPONSE from hub-1
+2021/01/16 23:40:21 [hub-1] Sending DOWNLOAD_REQUEST to ref-2
+2021/01/16 23:40:21 [hub-1] Received DOWNLOAD_RESPONSE from hub-1
+2021/01/16 23:40:21 [hub-1] Sending DOWNLOAD_REQUEST to node-2
+2021/01/16 23:40:21 [hub-1] Received DOWNLOAD_RESPONSE from hub-1
+2021/01/16 23:40:21 [hub-1] Sending DOWNLOAD_REQUEST to ref-2
+2021/01/16 23:40:21 [hub-1] Received DOWNLOAD_RESPONSE from hub-1
+2021/01/16 23:40:21 [hub-1] Sending DOWNLOAD_REQUEST to node-3
+2021/01/16 23:40:21 [hub-1] Received DOWNLOAD_RESPONSE from hub-1
+2021/01/16 23:40:21 [hub-1] Sending DOWNLOAD_REQUEST to ref-3
+2021/01/16 23:40:21 [hub-1] Received DOWNLOAD_RESPONSE from hub-1
+2021/01/16 23:40:21 [hub-1] Sending DOWNLOAD_REQUEST to node-3
+2021/01/16 23:40:21 [hub-1] Received DOWNLOAD_RESPONSE from hub-1
+2021/01/16 23:40:21 [hub-1] Sending DOWNLOAD_REQUEST to ref-3
+2021/01/16 23:40:21 [hub-1] Received DOWNLOAD_RESPONSE from hub-1
+2021/01/16 23:40:21 [hub-1] ============================================================
+2021/01/16 23:40:21 [hub-1] Testing ClientDownloadMissing ...
+2021/01/16 23:40:21 [hub-1] Sending DOWNLOAD_REQUEST to node-1
+2021/01/16 23:40:21 [hub-1] Received DOWNLOAD_RESPONSE from hub-1
+2021/01/16 23:40:21 [hub-1] Sending DOWNLOAD_REQUEST to ref-1
+2021/01/16 23:40:21 [hub-1] Received DOWNLOAD_RESPONSE from hub-1
+2021/01/16 23:40:21 [hub-1] Sending DOWNLOAD_REQUEST to node-2
+2021/01/16 23:40:21 [hub-1] Received DOWNLOAD_RESPONSE from hub-1
+2021/01/16 23:40:21 [hub-1] Sending DOWNLOAD_REQUEST to ref-2
+2021/01/16 23:40:21 [hub-1] Received DOWNLOAD_RESPONSE from hub-1
+2021/01/16 23:40:21 [hub-1] Sending DOWNLOAD_REQUEST to node-3
+2021/01/16 23:40:21 [hub-1] Received DOWNLOAD_RESPONSE from hub-1
+2021/01/16 23:40:21 [hub-1] Sending DOWNLOAD_REQUEST to ref-3
+2021/01/16 23:40:21 [hub-1] Received DOWNLOAD_RESPONSE from hub-1
+2021/01/16 23:40:21 [hub-1] ============================================================
+2021/01/16 23:40:21 [hub-1] Node execution statistics
+2021/01/16 23:40:21 [hub-1]     node-1 0 errors. CONGRATULATIONS!
+2021/01/16 23:40:21 [hub-1]     node-2 0 errors. CONGRATULATIONS!
+2021/01/16 23:40:21 [hub-1]     node-3 0 errors. CONGRATULATIONS!
+2021/01/16 23:40:21 [hub-1]     ref-1 0 errors. CONGRATULATIONS!
+2021/01/16 23:40:21 [hub-1]     ref-2 0 errors. CONGRATULATIONS!
+2021/01/16 23:40:21 [hub-1]     ref-3 0 errors. CONGRATULATIONS!
+2021/01/17 13:35:00 ========================================================================================================================
+2021/01/17 13:35:00 [ref-1] Registering ...
+2021/01/17 13:35:00 [ref-1] Sending REGISTRATION_REQUEST to hub-1
+2021/01/17 13:35:00 [ref-3] Registering ...
+2021/01/17 13:35:00 [ref-2] Registering ...
+2021/01/17 13:35:00 [ref-2] Sending REGISTRATION_REQUEST to hub-1
+2021/01/17 13:35:00 [hub-1] Listening on 127.0.0.1:5000
+2021/01/17 13:35:00 [ref-3] Sending REGISTRATION_REQUEST to hub-1
+2021/01/17 13:35:00 [ref-2] Received REGISTRATION_RESPONSE from ref-2
+2021/01/17 13:35:00 [ref-2] Listening on 127.0.0.1:5002
+2021/01/17 13:35:00 [ref-3] Received REGISTRATION_RESPONSE from ref-3
+2021/01/17 13:35:00 [ref-1] Received REGISTRATION_RESPONSE from ref-1
+2021/01/17 13:35:00 [ref-1] Listening on 127.0.0.1:5001
+2021/01/17 13:35:00 [ref-3] Listening on 127.0.0.1:5003
