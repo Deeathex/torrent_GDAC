@@ -64,7 +64,8 @@ public class ReplicateAbstraction implements Abstraction {
         boolean allChunksReplicated = true;
         for (Torr2.ChunkInfo chunkInfo : fileInfo.getChunksList()) {
             boolean currentChunkReplicated = false;
-            for (Torr2.NodeId nodeId : nodeList) {
+            for (int i = 0; i < nodeList.size(); i++) {
+                Torr2.NodeId nodeId = nodeList.get(i);
                 // skip over the current node
                 if (nodeId.getPort() == torrentSystem.getCurrentNode().getPort()) {
                     continue;
@@ -81,6 +82,9 @@ public class ReplicateAbstraction implements Abstraction {
                     nodeReplicationStatus.setStatus(Torr2.Status.NETWORK_ERROR);
                     nodeReplicationStatus.setErrorMessage("Cannot establish connection with node.");
                     replicateResponse.addNodeStatusList(nodeReplicationStatus);
+                    // when a node didn't respond, we remove it from the list (not going to ask again for other chunks)
+                    nodeList.remove(nodeId);
+                    i--;
                     continue;
                 }
                 if (!Torr2.Message.Type.CHUNK_RESPONSE.equals(chunkResponseMessage.getType())) {

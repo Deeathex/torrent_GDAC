@@ -1,6 +1,6 @@
 package torrent;
 
-import torrent.system.NetworkManager;s
+import torrent.system.NetworkManager;
 
 public class Main {
     private static final String OWNER = "node";

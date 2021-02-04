@@ -1,6 +1,8 @@
 *.iml 
 .idea
 .gradle
+out
+.out
 build
 logs
 gradlew

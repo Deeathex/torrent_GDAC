@@ -7,15 +7,16 @@ import torrent.abstractions.*;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 public class TorrentSystem {
     private static final int CHUNK_SIZE = 1024;
 
-    private final List<Abstraction> abstractionList = new ArrayList<>();
-    private final Map<ByteString, File> fileList = new HashMap<>();
+    private final List<Abstraction> abstractionList = new CopyOnWriteArrayList<>();
+    private final Map<ByteString, File> fileList = new ConcurrentHashMap<>();
     private final String hubIP;
     private final int hubPort;
     private Torr2.NodeId currentNode;

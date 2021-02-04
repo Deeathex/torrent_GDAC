@@ -16,7 +16,7 @@ public class NetworkManager {
     private final int nodePort;
     private final String hubIP;
     private final int hubPort;
-    private final ExecutorService executorService = Executors.newSingleThreadExecutor();
+    private final ExecutorService executorService = Executors.newCachedThreadPool();
     private final TorrentSystem torrentSystem;
     private final String owner;
     private final int ownerIndex;
@@ -165,10 +165,16 @@ public class NetworkManager {
                 while (true) {
                     try {
                         Socket clientSocket = serverSocket.accept();
-                        Torr2.Message request = readMessageFromSocket(clientSocket);
-                        Torr2.Message response = torrentSystem.trigger(request);
-                        sendMessageOnSocket(response, clientSocket);
-                        clientSocket.close();
+                        executorService.execute(() -> {
+                            try {
+                                Torr2.Message request = readMessageFromSocket(clientSocket);
+                                Torr2.Message response = torrentSystem.trigger(request);
+                                sendMessageOnSocket(response, clientSocket);
+                                clientSocket.close();
+                            } catch (IOException e) {
+                                e.printStackTrace();
+                            }
+                        });
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
