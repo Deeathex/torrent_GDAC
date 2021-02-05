@@ -3,14 +3,15 @@ package torrent.abstractions;
 import com.google.protobuf.ByteString;
 import torrent.Torr2;
 import torrent.system.File;
-import torrent.system.NetworkManager;
 import torrent.system.TorrentSystem;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 public class ReplicateAbstraction implements Abstraction {
     private TorrentSystem torrentSystem;
+    private final ExecutorService executorService = Executors.newCachedThreadPool();
 
     public ReplicateAbstraction(TorrentSystem torrentSystem) {
         this.torrentSystem = torrentSystem;
@@ -62,59 +63,72 @@ public class ReplicateAbstraction implements Abstraction {
         // then we do a chunk request on all of the nodes to get all the chunks in the file
         ByteString fileData = ByteString.EMPTY;
         boolean allChunksReplicated = true;
+        Queue<Future<?>> futures = new ConcurrentLinkedQueue<>();
+        Map<Integer, ByteString> indexToRawChunk = new ConcurrentHashMap<>();
         for (Torr2.ChunkInfo chunkInfo : fileInfo.getChunksList()) {
-            boolean currentChunkReplicated = false;
-            for (int i = 0; i < nodeList.size(); i++) {
-                Torr2.NodeId nodeId = nodeList.get(i);
-                // skip over the current node
-                if (nodeId.getPort() == torrentSystem.getCurrentNode().getPort()) {
-                    continue;
-                }
+            AtomicBoolean currentChunkReplicated = new AtomicBoolean(false);
 
-                // send a chunk request
-                Torr2.Message chunkResponseMessage = torrentSystem.sendChunkRequest(fileInfo, chunkInfo, nodeId);
-                Torr2.NodeReplicationStatus.Builder nodeReplicationStatus = Torr2.NodeReplicationStatus.newBuilder();
-                nodeReplicationStatus.setChunkIndex(chunkInfo.getIndex());
-                nodeReplicationStatus.setNode(nodeId);
+            futures.add(executorService.submit(() -> {
+                List<Torr2.NodeId> nodesShuffled = shuffle(nodeList);
 
-                // validate it
-                if (chunkResponseMessage == null) {
-                    nodeReplicationStatus.setStatus(Torr2.Status.NETWORK_ERROR);
-                    nodeReplicationStatus.setErrorMessage("Cannot establish connection with node.");
+                for (Torr2.NodeId nodeId : nodesShuffled) {
+                    // skip over the current node
+                    if (nodeId.getPort() == torrentSystem.getCurrentNode().getPort()) {
+                        continue;
+                    }
+
+                    // send a chunk request
+                    Torr2.Message chunkResponseMessage = torrentSystem.sendChunkRequest(fileInfo, chunkInfo, nodeId);
+                    Torr2.NodeReplicationStatus.Builder nodeReplicationStatus = Torr2.NodeReplicationStatus.newBuilder();
+                    nodeReplicationStatus.setChunkIndex(chunkInfo.getIndex());
+                    nodeReplicationStatus.setNode(nodeId);
+
+                    // validate it
+                    if (chunkResponseMessage == null) {
+                        nodeReplicationStatus.setStatus(Torr2.Status.NETWORK_ERROR);
+                        nodeReplicationStatus.setErrorMessage("Cannot establish connection with node.");
+                        replicateResponse.addNodeStatusList(nodeReplicationStatus);
+                        continue;
+                    }
+                    if (!Torr2.Message.Type.CHUNK_RESPONSE.equals(chunkResponseMessage.getType())) {
+                        nodeReplicationStatus.setStatus(Torr2.Status.MESSAGE_ERROR);
+                        nodeReplicationStatus.setErrorMessage("The response is not parsable or has the wrong type.");
+                        replicateResponse.addNodeStatusList(nodeReplicationStatus);
+                        continue;
+                    }
+
+                    // if the received chunk response is valid, we store the received chunk
+                    Torr2.ChunkResponse chunkResponse = chunkResponseMessage.getChunkResponse();
+                    nodeReplicationStatus.setStatus(chunkResponse.getStatus());
+                    nodeReplicationStatus.setErrorMessage(chunkResponse.getErrorMessage());
+
                     replicateResponse.addNodeStatusList(nodeReplicationStatus);
-                    // when a node didn't respond, we remove it from the list (not going to ask again for other chunks)
-                    nodeList.remove(nodeId);
-                    i--;
-                    continue;
+                    if (Torr2.Status.SUCCESS.equals(chunkResponse.getStatus())) {
+                        // store the chunks in a concurrent collection and construct fileData from it on SUCCESS
+                        indexToRawChunk.put(chunkInfo.getIndex(), chunkResponse.getData());
+                        currentChunkReplicated.set(true);
+                        break;
+                    }
                 }
-                if (!Torr2.Message.Type.CHUNK_RESPONSE.equals(chunkResponseMessage.getType())) {
-                    nodeReplicationStatus.setStatus(Torr2.Status.MESSAGE_ERROR);
-                    nodeReplicationStatus.setErrorMessage("The response is not parsable or has the wrong type.");
-                    replicateResponse.addNodeStatusList(nodeReplicationStatus);
-                    continue;
-                }
+            }));
 
-                // if the received chunk response is valid, we store the received chunk
-                Torr2.ChunkResponse chunkResponse = chunkResponseMessage.getChunkResponse();
-                nodeReplicationStatus.setStatus(chunkResponse.getStatus());
-                nodeReplicationStatus.setErrorMessage(chunkResponse.getErrorMessage());
-                replicateResponse.addNodeStatusList(nodeReplicationStatus);
-                if (Torr2.Status.SUCCESS.equals(chunkResponse.getStatus())) {
-                    fileData = fileData.concat(chunkResponse.getData());
-                    currentChunkReplicated = true;
-                    break;
+            for (Future<?> future : futures) {
+                try {
+                    future.get();
+                } catch (InterruptedException | ExecutionException e) {
+                    e.printStackTrace();
                 }
             }
 
             // if we could not replicate the current chunk, we stop
-            if (!currentChunkReplicated) {
+            if (!currentChunkReplicated.get()) {
                 allChunksReplicated = false;
                 break;
             }
         }
 
         if (allChunksReplicated) {
-            torrentSystem.getFileList().put(fileInfo.getHash(), new File(fileInfo, torrentSystem.parseFileData(fileData)));
+            torrentSystem.getFileList().put(fileInfo.getHash(), new File(fileInfo, torrentSystem.parseFileData(getFileList(fileData, indexToRawChunk))));
             replicateResponse.setStatus(Torr2.Status.SUCCESS);
         } else {
             replicateResponse.setStatus(Torr2.Status.UNABLE_TO_COMPLETE);
@@ -136,5 +150,20 @@ public class ReplicateAbstraction implements Abstraction {
             return false;
         }
         return true;
+    }
+
+    private List<Torr2.NodeId> shuffle(List<Torr2.NodeId> nodeList) {
+        List<Torr2.NodeId> nodesShuffled = new ArrayList<>(nodeList);
+        Collections.shuffle(nodesShuffled);
+        return nodesShuffled;
+    }
+
+    private ByteString getFileList(ByteString fileData, Map<Integer, ByteString> indexToRawChunk) {
+        TreeMap<Integer, ByteString> sortedRawChunks = new TreeMap<>(indexToRawChunk);
+        for (Map.Entry<Integer, ByteString> entry : sortedRawChunks.entrySet()) {
+            fileData = fileData.concat(entry.getValue());
+        }
+
+        return fileData;
     }
 }
