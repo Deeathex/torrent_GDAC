@@ -4,11 +4,16 @@ import torrent.Torr2;
 import torrent.system.TorrentSystem;
 
 import java.util.List;
+import java.util.Map;
+import java.util.Queue;
+import java.util.TreeMap;
+import java.util.concurrent.*;
 import java.util.regex.Pattern;
 import java.util.regex.PatternSyntaxException;
 
 public class SearchAbstraction implements Abstraction {
     private TorrentSystem torrentSystem;
+    private final ExecutorService executorService = Executors.newCachedThreadPool();
 
     public SearchAbstraction(TorrentSystem torrentSystem) {
         this.torrentSystem = torrentSystem;
@@ -24,6 +29,7 @@ public class SearchAbstraction implements Abstraction {
         }
         return null;
     }
+
 
     private Torr2.SearchResponse handleSearchRequest(Torr2.SearchRequest searchRequest) {
         final String regex = searchRequest.getRegex();
@@ -44,33 +50,50 @@ public class SearchAbstraction implements Abstraction {
             return searchResponse.build();
         }
 
+        Map<String, Torr2.NodeSearchResult.Builder> searchResults = new ConcurrentHashMap<>();
+        Queue<Future<?>> futures = new ConcurrentLinkedQueue<>();
         // search all the nodes
         for (final Torr2.NodeId nodeId : nodeList) {
-            // send a local search request
-            Torr2.Message localSearchResponse = torrentSystem.sendLocalSearchRequest(nodeId, regex);
-            Torr2.NodeSearchResult.Builder nodeSearchResult = Torr2.NodeSearchResult.newBuilder();
-            nodeSearchResult.setNode(nodeId);
+            futures.add(executorService.submit(() -> {
+                // send a local search request
+                Torr2.Message localSearchResponse = torrentSystem.sendLocalSearchRequest(nodeId, regex);
+                Torr2.NodeSearchResult.Builder nodeSearchResult = Torr2.NodeSearchResult.newBuilder();
+                nodeSearchResult.setNode(nodeId);
 
-            // if the response message is null, we consider it a network error
-            if (localSearchResponse == null) {
-                nodeSearchResult.setStatus(Torr2.Status.NETWORK_ERROR);
-                nodeSearchResult.setErrorMessage("Cannot connect to the node.");
-                searchResponse.addResults(nodeSearchResult);
-                continue;
+                // if the response message is null, we consider it a network error
+                if (localSearchResponse == null) {
+                    nodeSearchResult.setStatus(Torr2.Status.NETWORK_ERROR);
+                    nodeSearchResult.setErrorMessage("Cannot connect to the node.");
+                    searchResults.put(nodeId.getOwner() + nodeId.getIndex(), nodeSearchResult);
+                    return;
+                }
+
+                // if the response message is the wrong type, we mark it as such
+                if (!Torr2.Message.Type.LOCAL_SEARCH_RESPONSE.equals(localSearchResponse.getType())) {
+                    nodeSearchResult.setStatus(Torr2.Status.MESSAGE_ERROR);
+                    nodeSearchResult.setErrorMessage("The response is not parsable or has the wrong type.");
+                    searchResults.put(nodeId.getOwner() + nodeId.getIndex(), nodeSearchResult);
+                    return;
+                }
+
+                // if there are no issues, we add the found files to the result (and set the same status)
+                nodeSearchResult.addAllFiles(localSearchResponse.getLocalSearchResponse().getFileInfoList());
+                nodeSearchResult.setStatus(localSearchResponse.getLocalSearchResponse().getStatus());
+                searchResults.put(nodeId.getOwner() + nodeId.getIndex(), nodeSearchResult);
+            }));
+        }
+
+        for (Future<?> future : futures) {
+            try {
+                future.get();
+            } catch (InterruptedException | ExecutionException e) {
+                e.printStackTrace();
             }
+        }
 
-            // if the response message is the wrong type, we mark it as such
-            if (!Torr2.Message.Type.LOCAL_SEARCH_RESPONSE.equals(localSearchResponse.getType())) {
-                nodeSearchResult.setStatus(Torr2.Status.MESSAGE_ERROR);
-                nodeSearchResult.setErrorMessage("The response is not parsable or has the wrong type.");
-                searchResponse.addResults(nodeSearchResult);
-                continue;
-            }
-
-            // if there are no issues, we add the found files to the result (and set the same status)
-            nodeSearchResult.addAllFiles(localSearchResponse.getLocalSearchResponse().getFileInfoList());
-            nodeSearchResult.setStatus(localSearchResponse.getLocalSearchResponse().getStatus());
-            searchResponse.addResults(nodeSearchResult);
+        TreeMap<String, Torr2.NodeSearchResult.Builder> sortedSearchResults = new TreeMap<>(searchResults);
+        for (Map.Entry<String, Torr2.NodeSearchResult.Builder> entry : sortedSearchResults.entrySet()) {
+            searchResponse.addResults(entry.getValue());
         }
 
         return searchResponse.build();
